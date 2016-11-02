@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Introduction to lists</title>
+	<style>
+		.questions{
+			position: fixed;
+			background-color: rgba(0,255,0,.2);
+			padding: 20px;
+			top: 0;
+			right: 0;
+			border-radius: 10px;
+			font-size: 13px;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+		.questions p{
+			margin:0 0 10px;
+		}
+
+		.bdr{
+			border: dotted 1px red;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<h1>Introduction to lists</h1>
+		</header>
+		<h2>Types of lists</h2>
+		<p>There are three types of lists, they are</p>
+		<ul class="bdr" type="none">
+			<li class="bdr">Ordered list</li>
+			<li class="bdr">Un ordered list</li>
+			<li class="bdr">Definition Lists</li>
+		</ul>
+		<ol class="bdr" type="i">
+			<li class="bdr">Ordered list</li>
+			<li class="bdr">Un ordered list</li>
+			<li class="bdr">Definition Lists</li>
+		</ol>
+
+		<h2>UL and OL</h2>
+		<p>Both ul and ol are block level elements. they are indeed list types</p>
+		<p>Only li or list items can be the direct childs</p>
+		<p>any element which can hold flow content apart from p, headings. they are div, aside, article, nav, header, footer, main, </p>
+		<p><strong>Default styles</strong>, has margin top and bottom, padding left. All the child items that is li's will have bullets or numbers by default</p>
+		<p><strong>Attributes:</strong> start, type - depricated,  </p>
+		<h2>LI</h2>
+		<p>block level elements. they are indeed list items</p>
+		<p><strong>Child content</strong> - Any flow content. that is, div, ul, ol, dl, p, h1, h2...</p>
+		<p><strong>Parent</strong>- Either ul or ol</p>
+		<p><strong>Default styles</strong>, li's will have bullets or numbers by default</p>
+		<p><strong>Attributes:</strong> only global  </p>
+		<hr><hr>
+<img src="2016-11-02_1207-box-model-ul.png" alt="box model for ul and ol">
+<hr><hr>
+<ul>
+	<li>list item01</li>
+	<li>list item02
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorum nulla, non asperiores assumenda iure magnam praesentium fugiat ipsum reiciendis impedit architecto. Amet ab corporis cupiditate iusto, enim quibusdam voluptatem!</p>
+			<ul>
+				<li>sublist item 01</li>
+				<li>sublist item 02</li>
+				<li>sublist item 03</li>
+				<li>sublist item 04</li>
+				<li>sublist item 05</li>
+				<li>sublist item 06</li>
+			</ul>
+	</li>
+	<li>list item03</li>
+	<li>list item04</li>
+	<li>list item05</li>
+	<li>list item06</li>
+	<li>list item07</li>
+	<li>list item08</li>
+	<li>list item09</li>
+	<li>list item10</li>
+</ul>
+
+
+	</div>
+
+
+
+<div class="questions">
+	<p>What kind of element is it?</p>
+	<p>What kind of content can come inside it?</p>
+	<p>Who can be its parents?</p>
+	<p>What are its default styles?</p>
+	<p>Attributes?</p>
+</div>
+
+
+
+
+</body>
+</html>
+
