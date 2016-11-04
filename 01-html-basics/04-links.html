@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Introduction to lists</title>
+	<style>
+		.questions{
+			position: fixed;
+			background-color: rgba(0,255,0,.2);
+			padding: 20px;
+			top: 0;
+			right: 0;
+			border-radius: 10px;
+			font-size: 13px;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+		.questions p{
+			margin:0 0 10px;
+		}
+
+		.bdr{
+			border: dotted 1px red;
+		}
+		.site-links{}
+		.site-links li{
+			display: inline-block;
+		}
+
+		.dabba{
+			width: 800px;
+			padding: 20px 40px 100px;
+			border-left: dotted 1px red;
+			margin: 20px auto;
+			font-family: Verdana, Geneva, sans-serif;
+			min-height: 650px;
+			position: relative;
+		}
+		.back-to-top{
+			background-color: lightgreen;
+			padding: 10px;
+			text-transform: uppercase;
+			font-size: 14px;
+			text-decoration: none;
+			position: absolute;
+			right: 0;
+			top: 40px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrapper" id="home">
+	<header>
+		<h1>Introduction to lists</h1>
+		<nav class="bdr">
+			<ul class="site-links">
+				<li><a href="mailto:kris@htmlden.com;kris@dzineden.com?cc=info@htmlden.com&bcc=whatever@xyz.com&subject=[krisschool] Enquiry&body=whatever sdlkfgdkfsl slkfd ghfdghkfdsl ghfdslg kshfdlgkjh">Email me</a></li>
+				<li><a href="tel:+919880439463">Call me</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#my-photos">My Photos</a></li>
+				<li><a href="#contact-me">Contact me</a></li>
+			</ul>
+		</nav>
+	</header>
+</div><!-- eo wrapper -->
+
+
+<hr>
+<hr>
+<div class="dabba" id="about">
+	<a href="#home" class="back-to-top">Back to top</a>
+	<h2>About me</h2>
+	<iframe src="http://www.htmlden.com/" frameborder="0" width="500" height="400"></iframe>
+	<p>Facebook social widgets - <a href="https://developers.facebook.com/docs/plugins/like-button#configurator">Social widgets</a></p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptates totam, odit nisi assumenda accusamus fugit fuga, facilis modi dolor deserunt. Consequuntur blanditiis perspiciatis veniam architecto in ipsa quae, illo.</p>
+</div>
+
+<div class="dabba" id="works">
+	<a href="#home" class="back-to-top">Back to top</a>
+	<h2>Works</h2>
+	<div class="fb-comments" data-href="http://b14.htmlden.in/kris/" data-numposts="5"></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptates totam, odit nisi assumenda accusamus fugit fuga, facilis modi dolor deserunt. Consequuntur blanditiis perspiciatis veniam architecto in ipsa quae, illo.</p>
+</div>
+
+<div class="dabba" id="my-photos">
+	<a href="#home" class="back-to-top">Back to top</a>
+	<h2>My Photos</h2>
+
+	<iframe src="india.html" frameborder="0" width="400" height="300"></iframe>
+
+</div>
+
+<div class="dabba" id="contact-me">
+	<a href="#home" class="back-to-top">Back to top</a>
+	<h2>Contact me</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.878289458481!2d77.58852671437536!3d12.979635590850638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae166e0e8fccc1%3A0x2e485481a06540f5!2sVidhana+Soudha!5e0!3m2!1sen!2sin!4v1478238629210" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div>
+
+
+
+
+
+<!--===============================
+=            Questions            =
+================================-->
+	<div class="questions">
+		<p>What kind of element is it?</p>
+		<p>What kind of content can come inside it?</p>
+		<p>Who can be its parents?</p>
+		<p>What are its default styles?</p>
+		<p>Attributes?</p>
+	</div><!-- eo questions -->
+<!--====  End of Questions  ====-->
+
+
+
+
+
+</body>
+</html>
+
