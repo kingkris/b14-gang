@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Basics of Cascading Stylesheets</title>
+	<link rel="stylesheet" href="">
+	<style>
+
+/*----------  Selector syntax  ----------
+		selector-name{
+			css-property : value;
+			css-property : value;
+			css-property : value;
+			css-property : value;
+			css-property : value;
+			....;
+			....;
+			....
+		}
+*/
+/*----------  Types of selectors  ----------
+
+		1. Universal Selectors
+		2. Tag or type selectors
+		3. Class Selectors
+		4. ID Selectors
+		6. Psuedo Selectors
+		7. Attribute Selectors
+		5. Descendant Selectors 
+		...
+		...
+		...
+
+*/
+	*{ /* Universal Selector */
+		border:dotted 1px green;
+	}
+
+	body{ /*type or tag selector*/
+		background-color: beige;
+	}
+	h1{ /*type or tag selector*/
+		background-color: lightgreen;
+		border-bottom: solid 4px green;
+		font-weight: normal;
+		font-size: 24px;
+		margin-top: 0;
+		border-radius: 20px 20px 0 0;
+		text-align: center;
+	}
+	.container{ /*class selector*/
+		background-color: white;
+		padding: 10px
+	}
+	.text{ /*class selector*/
+		font-size: 18px;
+		line-height: 24px;
+		font-family: Tahoma, Verdana, Segoe, sans-serif;
+		color: #444;
+	}
+	#page-heading{ /*id selector*/
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: #FD7EFF;
+		border-bottom-color: #B200B5;
+		padding: 20px;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container" style="margin: 20px auto;width: 1000px;border-radius: 20px;"><!-- inline styles -->
+		<h1 id="page-heading">Intro to <abbr title="Cascading Style Sheets">CSS</abbr></h1>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur harum non quia a, voluptates ratione, reiciendis, ipsum qui fugiat mollitia animi ullam delectus earum adipisci possimus? Eveniet consequatur facilis aliquid.</p>
+		<ul>
+			<li>list item</li>
+			<li class="text">list item</li>
+			<li class="text">list item</li>
+			<li class="text">list item</li>
+			<li>list item</li>
+		</ul>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptatum. Id numquam dolores at voluptatum atque accusantium aliquid nulla! Veritatis, quas doloribus dicta dolore nesciunt qui esse consectetur iste quidem?</p>
+		<h1>one more heading tag</h1>
+	</div>
+</body>
+</html>
