@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Basics of Cascading Stylesheets</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/normalize.css">
 	<style>
 
 /*----------  Selector syntax  ----------
@@ -25,14 +25,24 @@
 		2. Tag or type selectors
 		3. Class Selectors
 		4. ID Selectors
-		6. Psuedo Selectors
-		7. Attribute Selectors
 		5. Descendant Selectors 
+		6. Psuedo Selectors
+				:link, :active, :focus, :hover, :visited, 
+				:before, :after, 
+				:first-child, :last-child, nth-child(), 
+				:first-letter, :first-line
+				:selection :not, 
+		7. Attribute Selectors
 		...
 		...
 		...
+https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/
+
 
 */
+
+
+
 	*{ /* Universal Selector */
 		border:dotted 1px green;
 	}
@@ -67,20 +77,134 @@
 		padding: 20px;
 	}
 
+	.sub-heading{
+		color: green;
+	}
+
+	.sub-heading:before{
+		content: "~ ";
+	}
+	.sub-heading:after{
+		content: "? ";
+	}
+	.lists{
+		border: solid 4px red;
+	}
+	li{
+		border:solid 1px green;
+	}
+	.lists li{
+		border:solid 3px blue;
+	}
+	.lists li:first-child{
+		border-top:solid 10px black;
+	}
+	.lists li:last-child{
+		border-bottom:solid 10px black;
+	}
+	.lists li:nth-child(3){
+		border:solid 5px black;
+	}
+	.lists li:nth-child(odd){
+		background-color: lightgreen;
+	}
+	.lists li:nth-child(even){
+		background-color: lightblue;
+	}
+.lists1 li:nth-child(2n){
+	background-color: wheat;
+}
+.lists1 li:nth-child(2n+1){
+	background-color: pink;
+}
+.lists1 li:nth-child(4n){
+	border-bottom: solid 5px red;
+}
+a:link{color: blue;text-decoration: none;border: none;}
+a:visited{color: blue;text-decoration: none;}
+a:hover{color: white;background-color: green}
+
+
+[href="#"]{
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: red;
+	color: #FFF;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+[href="#"]{
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: red;
+	color: #FFF;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+[href$=".jpg"]:after{
+	content: " -- img link"
+}
+/* 
+more about attribute selectors - https://css-tricks.com/almanac/selectors/a/attribute/ 
+*/
 	</style>
 </head>
 <body>
 	<div class="container" style="margin: 20px auto;width: 1000px;border-radius: 20px;"><!-- inline styles -->
 		<h1 id="page-heading">Intro to <abbr title="Cascading Style Sheets">CSS</abbr></h1>
-		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur harum non quia a, voluptates ratione, reiciendis, ipsum qui fugiat mollitia animi ullam delectus earum adipisci possimus? Eveniet consequatur facilis aliquid.</p>
-		<ul>
+		<nav>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="http://www.htmlden.com/">Link1</a></li>
+				<li><a href="img/mrs-tablet-crown.jpg">Some image</a></li>
+				<li><a href="img/miss-hillary.jpg">Some image</a></li>
+				<li><a href="img/mr-boda-liasona.jpg">Some image</a></li>
+				<li><a href="img/mrs-lillian-james.jpg">Some image</a></li>
+			</ul>
+		</nav>
+		<h2 class="sub-heading">some page sub heading</h2>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur harum non quia a, voluptates <a href="#">Link1</a>ratione, reiciendis, ipsum qui fugiat mollitia animi ullam delectus earum adipisci possimus? Eveniet consequatur facilis aliquid.</p>
+		<ul class="lists">
 			<li>list item</li>
 			<li class="text">list item</li>
 			<li class="text">list item</li>
 			<li class="text">list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item<a href="#">Link1</a></li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
 			<li>list item</li>
 		</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptatum. Id numquam dolores at voluptatum atque accusantium aliquid nulla! Veritatis, quas doloribus dicta dolore nesciunt qui esse consectetur iste quidem?</p>
+		<ul class="lists1">
+			<li>list item</li>
+			<li class="text">list item</li>
+			<li class="text">list item</li>
+			<li class="text">list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+			<li>list item</li>
+		</ul>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptatum. Id numquam dolores <a href="#">Link1</a> at voluptatum atque accusantium aliquid nulla! Veritatis, quas doloribus dicta dolore nesciunt qui esse consectetur iste quidem?</p>
 		<h1>one more heading tag</h1>
 	</div>
 </body>
