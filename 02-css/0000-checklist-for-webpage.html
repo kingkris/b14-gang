@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Basics of Cascading Stylesheets</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		html{
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+			color: #444;
+			font-size: 1em;
+		}
+		body{
+			background-color: lightgreen;
+		}
+		header{
+			background-color: #0092BF;
+			border-bottom: solid 5px #F06529;
+			padding: 2px;
+			margin-bottom: 20px;
+		}
+		header h1{
+			text-align: center;
+			color: #FFF;
+			font-family:Georgia, Times, "Times New Roman", serif;
+			font-size: 60px;
+			font-weight: normal;
+			line-height: 2;
+		}
+		.wrapper{
+			width: 1000px;
+			padding: 30px;
+			border-radius: 10px;
+			background-color: #FFF;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.row{
+			padding: 10px;
+			margin-bottom: 10px;
+			border-bottom: solid 1px #DBDBDB;
+		}
+		.row:hover{
+			background-color: #EDDAFF;
+		}
+		.row .row{
+			font-size: 14px;
+			padding: 6px 6px 6px 20px;
+			margin-top: 5px;
+			border-bottom: solid 1px #DBDBDB;
+		}
+		.row .row:hover{
+			background-color: #CE73C2;
+			color: #FFF;
+		}
+
+		.row input{
+			margin-top: 3px;
+			float: left;
+		}
+		.row label{
+			margin-left: 30px;
+			display: block;
+			cursor: pointer;
+
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h1>Checklist for beginners</h1>
+</header>
+
+<div class="wrapper">
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist01"> 
+		<label for="chklist01">Create the folder structure</label>
+	</div>
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist02"> 
+		<label for="chklist02">Download normalize.css</label>
+	</div>
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist03"> 
+		<label for="chklist03">Create Project in ST3 and add folders to project</label>
+	</div>
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist04"> 
+		<label for="chklist04">Start with html file</label>
+
+		<div class="row">
+			<input type="checkbox" name="chklist" value="" id="chklist05"> 
+			<label for="chklist05">Add title</label>
+		</div><!-- /.row -->
+		<div class="row">
+			<input type="checkbox" name="chklist" value="" id="chklist06"> 
+			<label for="chklist06">linking Normalize.css</label>
+		</div><!-- /.row -->
+		<div class="row">
+			<input type="checkbox" name="chklist" value="" id="chklist07"> 
+			<label for="chklist07">Create another .css file in css folder and link that one too</label>
+		</div><!-- /.row -->
+		<div class="row">
+			<input type="checkbox" name="chklist" value="" id="chklist07"> 
+			<label for="chklist07">Create a favicon.ico and link it</label>
+		</div><!-- /.row -->
+	</div>
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist08"> 
+		<label for="chklist08">Lets start with creating markup for your content</label>
+	</div><!-- eo row -->
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist09"> 
+		<label for="chklist09">Once done, test the file in all the browsers</label>
+	</div><!-- eo row -->
+	<div class="row">
+		<input type="checkbox" name="chklist" value="" id="chklist10"> 
+		<label for="chklist10">Validate the code in validator.w3.org</label>
+	</div><!-- eo row -->
+
+</div>
+
+
+</body>
+</html>

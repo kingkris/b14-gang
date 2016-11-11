@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Basics of Cascading Stylesheets</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+
+/*----------  Selector syntax  ----------
+		selector-name{
+			css-property : value;
+			css-property : value;
+			css-property : value;
+			css-property : value;
+			css-property : value;
+			....;
+			....;
+			....
+		}
+*/
+/*----------  Types of selectors  ----------
+
+		1. Universal Selectors
+		2. Tag or type selectors
+		3. Class Selectors
+		4. ID Selectors
+		5. Descendant Selectors 
+		6. Psuedo Selectors
+				:link, :active, :focus, :hover, :visited, 
+				:before, :after, 
+				:first-child, :last-child, nth-child(), 
+				:first-letter, :first-line
+				:selection :not, 
+		7. Attribute Selectors
+		...
+		...
+		...
+https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/
+
+
+*/
+
+.holder *{
+	border-bottom: solid 1px red;
+}
+
+.lists > li{ /*direct child selector*/
+	border-bottom: dotted 2px green;
+}
+
+[datatype]{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+[datatype="website"]{
+	color: red;
+}
+[datatype="blog"]{
+	color: green;
+}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="holder">
+		<h1>heading tag</h1>
+		<h2>some sub heading</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsa optio modi veniam quo vero consequuntur minima corporis atque sed nesciunt itaque accusantium numquam suscipit et sint quaerat hic, quia.</p>
+		<ul>
+			<li datatype="website">list item</li>
+			<li datatype="website">list item</li>
+			<li datatype="website">list item</li>
+			<li datatype="recipe">list item</li>
+			<li datatype="website">list item</li>
+			<li datatype="blog">list item</li>
+		</ul>
+	</div><!-- eo holder -->
+	<h1>one more heading</h1>
+		<h1>heading tag</h1>
+		<h2>some sub heading</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsa optio modi veniam quo vero consequuntur minima corporis atque sed nesciunt itaque accusantium numquam suscipit et sint quaerat hic, quia.</p>
+		<ul class="lists">
+			<li>list item</li>
+			<li>list item
+				<ul>
+					<li>sub list item</li>
+					<li>sub list item</li>
+					<li>sub list item</li>
+					<li>sub list item</li>
+					<li>sub list item</li>
+				</ul>
+			</li>
+			<li>
+				<h2>list item</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati, sequi vitae delectus quasi quam fuga quidem quibusdam, repellat itaque error velit a, id unde non excepturi tempore at corporis.</p>
+				<div>
+					<ul>
+						<li><a href="#">some link</a></li>
+						<li><a href="#">some link</a></li>
+						<li><a href="#">some link</a></li>
+						<li><a href="#">some link</a></li>
+						<li><a href="#">some link</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>list item
+				<ol>
+					<li>sub list item</li>
+					<li>sub list item</li>
+					<li>sub list item</li>
+					<li>sub list item</li>
+					<li>sub list item</li>
+				</ol>
+			</li>
+			<li>list item</li>
+			<li>list item</li>
+		</ul>
+</body>
+</html>
