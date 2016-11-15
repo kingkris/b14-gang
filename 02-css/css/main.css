@@ -1,0 +1,24 @@
+/*=====================================================================
+=            Fixed components for properties and questions            =
+=====================================================================*/
+.fixed-box{
+	position: fixed;
+	right: 0;
+	background-color: rgba(0,0,0,.95);
+	padding: 15px;
+	border-radius:10px;
+	width: 275px;
+}
+.fixed-box ul{
+	padding-left: 20px;
+	font-size:13px;
+	color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	margin:0;
+}
+.questions{bottom:0;}
+.properties{bottom:110px;}
+
+/*=====  End of Fixed components for properties and questions  ======*/
+
+

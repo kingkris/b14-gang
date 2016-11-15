@@ -1,0 +1,116 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Font related style properties
++++++++++++++++++++++++++++++++++++++++++++
+~  font-style: normal | italic | oblique
+    ^ cite, em, i, address - for these elements the default font-style is italic
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+      700 is bold, 400 is normal
+    ^ h1, h2, h3, h4, h5, h6, strong, b - for these elements the default font-weight is bold or 700
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  font-size:
+    ^ px, %, em, rem, vw, vh
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ you can animate
+
+~  line-height:
+    ^ px, %, em, rem, vw, vh
+    ^ 
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ you can animate
+
+~  font-family: serif;
+    ^ default font family is serif - which is normally times new roman
+    ^ font stacks, 
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+Serif, Sans-serif, cursive, monospace
+
+Shorthand property
+~~   font: [font-style font-weight font-size/line-height font-family]
+
+~  text-transform: none | uppercase | lowercase | capitalize
+    ^ default value is none
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  color:
+    ^ default value is black, a tag it is blue, 
+      visited link it purple, 
+      active link it is red
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ you can animate
+
+color values can be applied in 4 diff formats
+    colornames - eg. red; http://htmlcolorcodes.com/color-names/
+    hex decimal codes - eg. #FF0000
+      hex decimal shorthand property - eg. #F00
+        ff0011 -- f01
+        aa2233 -- a23
+        da1122 -- da1122
+        fafafa -- fafafa
+        fff222 -- fff222
+
+    rgb value - eg. rgb(255,0,0)
+    rgba value - eg. rgba(255,0,0,1) - css3
+
+~  text-decoration:none | underline | overline | line-through
+    ^ default value is none, only for a tag you have underline
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+
+• text-shadow – css3
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Font related properties
+   ========================================================================== */
+
+
+
+
+.container{
+  width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font-sh-demo{
+  font-style:italic;
+  font-weight:bold;
+  font-size:20px;
+  line-height:30px;
+  font-family: verdana, arial, sans-serif;
+
+  font: italic bold 20px/30px verdana, arial, sans-serif;  
+}
+
+
+
