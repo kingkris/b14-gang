@@ -1,0 +1,52 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Font related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  word-spacing: normal | <length>
+    ^ default value is normal
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  letter-spacing : normal | <length>
+~  vertical-align : baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
+~  text-align : left | right | center | justify
+~  text-indent
+~  white-space: normal | pre | nowrap | pre-wrap | pre-line
+~  display: block | inline | inline-block | table | table-row | table-cell | list-item | none
+~  content – 
+~  text-overflow - clip | ellipsis 
+
+
+
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Block related properties
+   ========================================================================== */
+
+
+img{
+  vertical-align: baseline;
+}
+
+.page-title{
+  border: solid 1px red;
+  padding: 20px;
+  text-align: justify;
+  white-space:nowrap
+}

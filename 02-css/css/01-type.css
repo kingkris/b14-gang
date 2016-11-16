@@ -101,16 +101,58 @@ inherit;
   margin-left: auto;
   margin-right: auto;
 }
+.font-style-demo{
+  font-style:normal;
+}
+.font-weight-demo{
+  font-weight:900;
+}
+.font-f-demo{
+  font-family: 'Open sans', sans-serif;
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif
+}
+.slabo-27{
+  font-family: 'Slabo 27px', serif;
+  font-weight:400;
+  font-size:16px;
+  line-height: 1.4;
+}
 
+
+/* shorthand - sh-demo */
 .font-sh-demo{
+/* 
   font-style:italic;
   font-weight:bold;
   font-size:20px;
   line-height:30px;
   font-family: verdana, arial, sans-serif;
-
+*/
   font: italic bold 20px/30px verdana, arial, sans-serif;  
 }
 
+.page-heading{
+  font-family: 'Slabo 27px', serif;
+  font-weight:400;
+  text-transform: uppercase;
+/* ~  none | uppercase | lowercase | capitalize */
+}
+.sub-heading{
+/* 
+  color:red;
+  color:#FF0000;
+  color:#F00;
+  color:rgb(255,0,0);
+*/
+  color:rgba(255,0,0,.5);
+  font-family: 'Slabo 27px', serif;
+  font-weight:400;
+  text-transform: capitalize;
+/* ~  none | uppercase | lowercase | capitalize */
+}
 
+.td-demo{
+/* ~  text-decoration:none | underline | overline | line-through */
+  text-decoration: underline overline line-through;
+}
 

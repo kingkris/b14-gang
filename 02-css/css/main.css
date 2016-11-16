@@ -8,6 +8,7 @@
 	padding: 15px;
 	border-radius:10px;
 	width: 275px;
+	display: none;
 }
 .fixed-box ul{
 	padding-left: 20px;
