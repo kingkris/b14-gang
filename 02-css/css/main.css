@@ -8,7 +8,6 @@
 	padding: 15px;
 	border-radius:10px;
 	width: 275px;
-	display: none;
 }
 .fixed-box ul{
 	padding-left: 20px;
@@ -22,4 +21,33 @@
 
 /*=====  End of Fixed components for properties and questions  ======*/
 
+.spacer{
+	min-height: 400px;
+	border-left: dotted 1px grey;
+	width:800px;
+	margin:20px auto;
+}
+
+
+ul.menu{
+	border-bottom: solid 4px orange;
+}
+.menu li{
+	display:inline;
+}
+.menu li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:green
+}
+.menu li a:hover{
+	color:orange
+}
+
+.menu li .submenu{
+	display:none;
+}
+.menu li:hover .submenu{
+	display:block;
+}
 

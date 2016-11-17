@@ -13,17 +13,46 @@ Font related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 
 ~  word-spacing: normal | <length>
-    ^ default value is normal
+~  letter-spacing : normal | <length>
+    ^ default value is auto
     ^ This property gets inherited
     ^ This property can be applied to all the elements
     ^ Can't animate
 
-~  letter-spacing : normal | <length>
 ~  vertical-align : baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
+    ^ default value is baseline
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to very few elements, like img, input, td, tr, table
+    ^ you can animate
+https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+
+
 ~  text-align : left | right | center | justify
+    ^ default value is left - depends on page direction
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
 ~  text-indent
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to block level elements
+    ^ Can't animate
+
 ~  white-space: normal | pre | nowrap | pre-wrap | pre-line
-~  display: block | inline | inline-block | table | table-row | table-cell | list-item | none
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to block level elements
+    ^ Can't animate
+
+~  display: block | inline | inline-block | 
+            table | table-row | table-cell | 
+            list-item | none
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
 ~  content – 
 ~  text-overflow - clip | ellipsis 
 
@@ -48,5 +77,32 @@ img{
   border: solid 1px red;
   padding: 20px;
   text-align: justify;
-  white-space:nowrap
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
 }
+.spacing-demo{
+  word-spacing:50px;
+  letter-spacing:20px
+}
+
+.ta-demo{
+  border: solid 1px red;
+  text-align: left;
+  text-indent: 100px;
+}
+
+.white-space-demo{
+  white-space:pre-line
+}
+
+.block-demo{
+  border: solid 1px red;
+  display:none;
+  width:50%;
+  margin:20px;
+}
+
+span.block-demo{border-color:green}
+
+
