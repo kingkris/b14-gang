@@ -40,6 +40,8 @@ ul.menu{
 	text-transform: uppercase;
 	color:green
 }
+
+.menu li.active a,
 .menu li a:hover{
 	color:orange
 }

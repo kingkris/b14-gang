@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>List related CSS properties</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/03-list.css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<header class="site-header">
+	<h1>
+		<a href="#">
+			CSS masala - 
+			<small>your style ingredients</small>
+		</a>
+	</h1>
+	<nav>
+		<ul class="menu">
+			<li><a href="01-type.html">Type</a></li>
+			<li><a href="02-block.html">Block</a></li>
+			<li class="active"><a href="03-list.html">List</a></li>
+			<li><a href="04-background.html">Background</a></li>
+			<li><a href="05-border.html">Border</a></li>
+			<li><a href="06-box.html">Box</a></li>
+			<li><a href="07-position.html">Position</a></li>
+			<li><a href="08-html5-elements.html">html5 elements</a></li>
+			<li><a href="09-layouts.html">Layouts</a></li>
+			<li><a href="10-forms.html">Forms</a></li>
+			<li><a href="11-animation.html">Animation</a></li>
+			<li class="has-submenu"><a href="#">CSS3</a>
+					<ul class="submenu">
+						<li><a href="12-1-css3-properties.html">CSS3 Properties</a></li>
+						<li><a href="12-2-grids.html">Grids</a></li>
+						<li><a href="12-3-flex.html">Flex</a></li>
+					</ul>
+			</li>
+		</ul>
+	</nav>
+</header><!-- /.site-header -->
+<div class="container">
+	<h1 class="page-title">List related style properties</h1>
+</div><!-- /.container -->
+
+<div class="wrap">
+	<h2>demo of defualt bullet style for different level nested lists</h2>
+	<ul>
+		<li>first level list item 01</li>
+		<li>first level list item 02</li>
+		<li>first level list item 03
+			<ul>
+				<li>second level item 01</li>
+				<li>second level item 02
+					<ul>
+						<li>third level item 01</li>
+						<li>third level item 02
+							<ul>
+								<li>fourth level item 01
+									<ul>
+										<li>fifth level item 01</li>
+										<li>fifth level item 02</li>
+										<li>fifth level item 03</li>
+										<li>fifth level item 04</li>
+										<li>fifth level item 05</li>
+									</ul>
+								</li>
+								<li>fourth level item 02</li>
+								<li>fourth level item 03</li>
+								<li>fourth level item 04</li>
+								<li>fourth level item 05</li>
+							</ul>
+						</li>
+						<li>third level item 03</li>
+						<li>third level item 04</li>
+						<li>third level item 05</li>
+					</ul>
+				</li>
+				<li>second level item 03</li>
+				<li>second level item 04</li>
+				<li>second level item 05</li>
+			</ul>
+		</li>
+		<li>first level list item 04</li>
+		<li>first level list item 05</li>
+	</ul>
+	<hr>
+	<hr>
+	<h2>demo of defualt bullet style for different level nested lists</h2>
+	<ol>
+		<li>first level child 1</li>
+		<li>first level child 2
+			<ol>
+				<li>second level child 2-1</li>
+				<li>second level child 2-2
+					<ol class="li-kannada">
+						<li>third level child 3-01</li>
+						<li>third level child 3-02</li>
+						<li>third level child 3-03</li>
+						<li>third level child 3-04</li>
+						<li>third level child 3-05</li>
+					</ol>
+				</li>
+				<li>second level child 2-3</li>
+				<li>second level child 2-4</li>
+				<li>second level child 2-5</li>
+			</ol>
+		</li>
+		<li>first level child 3</li>
+		<li>first level child 4</li>
+		<li>first level child 5</li>
+	</ol>
+	<hr>
+	<ol class="list-lower-alpha">
+		<li>list item 001</li>
+		<li>list item 002</li>
+		<li>list item 003</li>
+		<li>list item 004</li>
+		<li>list item 005</li>
+	</ol>
+
+	<hr>
+	<ol class="list-img">
+		<li>list item 001</li>
+		<li>list item 002</li>
+		<li>list item 003</li>
+		<li>list item 004</li>
+		<li>list item 005</li>
+	</ol>
+
+
+</div>
+
+
+
+<!-- 
++++++++++++++++++++++++++++++++++++++
+Questions n Properties 
++++++++++++++++++++++++++++++++++++++
+-->
+<div class="spacer"></div>
+
+<div class="fixed-box questions">
+	<ul>
+		<li>Default values for different elements</li>
+		<li>Different values that can be given</li>
+		<li>Does this property gets Inherited</li>
+		<li>Can they be applied to all elements</li>
+		<li>Can they be animated</li>
+	</ul>
+</div><!-- /.questions -->
+<div class="fixed-box properties">
+	<ul>
+		<li>list-style-type, list-style-position, list-style-image</li>
+		<li>list-style - <i>shorthand</i></li>
+		<li>counter-increment, counter-reset</li>
+	</ul>
+</div><!-- /.properties -->
+
+
+
+</body>
+</html>

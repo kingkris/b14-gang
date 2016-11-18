@@ -1,0 +1,87 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+List related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  list-style-type: none
+                    disc | circle | square
+                    decimal | decimal-leading-zero | lower-roman | upper-roman
+                    lower-alpha | upper-alpha
+                    kannada | tamil | devanagari | malayalam
+    ^ default value for ul li is disc
+    ^ default value for ol li is decimal
+    ^ This property gets inherited
+    ^ This property can be applied to list elements
+    ^ Can't animate
+
+~  list-style-position: outside | inside
+    ^ default value for outside
+    ^ This property gets inherited
+    ^ This property can be applied to list elements
+    ^ Can't animate
+
+~  list-style-image: none | url()
+    ^ default value for none
+    ^ This property gets inherited
+    ^ This property can be applied to list elements
+    ^ Can't animate
+
+
+
+
+
+  list-style-type
+  list-style-position
+  list-style-image
+  list-style
+  counter-increment
+  counter-reset
+
+auto;
+inherit;
+
+List related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters
+
+*/
+
+/* ==========================================================================
+   Demo of Block related properties
+   ========================================================================== */
+
+.wrap{
+  width:1000px;
+  background-color: wheat;
+  padding: 20px;
+  border-radius:10px;
+  margin:20px auto;
+}
+
+
+.li-kannada{
+  list-style-type: kannada;
+}
+.list-lower-alpha{
+  list-style-type: lower-alpha;
+  border: solid 1px red;
+  list-style-position:inside
+}
+.list-lower-alpha li{
+  border: solid 1px green;
+}
+
+.list-img{
+  list-style-type: lower-alpha;
+  list-style-image:url('../img/bullet-01.png')
+}
