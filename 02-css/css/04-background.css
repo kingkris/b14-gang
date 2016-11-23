@@ -30,13 +30,34 @@ Background related style properties
     ^ You can't animate
 
 ~  background-attachment- fixed | scroll
+    ^ default value is scroll
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
 
+~  background-position
+        values are specified in key words as x & y codordinates
+      for x - left center right
+      for y - top center bottom
+      you can also specify as length
 
+    ^ default value is left top - 0 0
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
 
-
-
-background-position
 background [color image repeat attachment position]
+
+~  background-size – auto | contain | cover | -length-
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+
+
+
+
 background-size – contain, cover
 background-origin – border-box, padding-box, content-box
 background-clip – 
@@ -86,10 +107,16 @@ body{
 .img-box2{
   background-image: url(../img/SM457150.jpg);
   background-color:red;
+
 }
 .img-box3{
   background-image: url(../img/frnds-transparent-bg.png);
-  background-color:grey;
+
+  background: #65f0f7;
+  background: -moz-linear-gradient(left,  #65f0f7 0%, #5b36ed 100%);
+  background: -webkit-linear-gradient(left,  #65f0f7 0%,#5b36ed 100%);
+  background: linear-gradient(to right,  #65f0f7 0%,#5b36ed 100%);
+
 }
 .bars{
   min-height: 500px;
@@ -125,4 +152,115 @@ body{
   background-size: cover;
 }
 
+
+/* position demo */
+
+.position-demo-title{
+  font-size:40px;
+  font-weight: normal;
+  line-height: 200px;
+  text-align: center;
+  color:darkgreen;
+
+  background-color:white;
+  background-image: url('../img/floral-bg.png');
+  background-repeat: no-repeat;
+  background-position: center 130px;
+
+  background: white url('../img/floral-bg.png') no-repeat scroll center 130px;
+
+  background: white;
+
+}
+
+.students{
+  border:solid 10px grey;
+  border-radius:20px;
+  background-color:white;
+  padding: 10px;
+  margin:20px auto;
+  width:800px;
+}
+.students *{
+  box-sizing: border-box;
+}
+.students:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.students > div{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border: solid 2px grey;
+  background-color:grey;
+  float: left;
+  text-align: center;
+  margin:10px;
+  background-repeat: no-repeat;
+  background-image: url('../img/SM457150.jpg');
+  position: relative;
+} 
+.students > div span{
+  font-size:12px;
+  text-transform: uppercase;
+  background-color:rgba(0,0,0,.75);
+  color:#FFF;
+  padding:5px 10px;
+  position: absolute;
+  bottom:-10px;
+  left:0;
+  width:100%;
+  border-radius:5px 5px 0 0;
+} 
+.stu-1{background-position: -7px -90px;}
+.stu-2{background-position: -136px -74px;}
+.stu-3{background-position: -218px -95px;}
+.stu-4{background-position: -308px -83px;}
+.stu-5{background-position: -408px -75px;}
+.stu-6{background-position: -506px -89px;}
+.stu-7{background-position: -584px -86px;}
+.stu-8{background-position: -759px -74px;}
+
+.students .all{
+  width:300px;
+  height:140px;
+  border-radius:10px;
+  border: solid 2px grey;
+  background-color:grey;
+  float: left;
+  margin:10px;
+  background-repeat: repeat;
+  background-image: url('../img/SM457150.jpg');
+  background-size:contain;
+} 
+
+
+.students2{
+  border:solid 40px rgba(255,0,0,.6);
+  border-radius:20px;
+  background-color:white;
+  padding: 10px;
+  margin:20px auto;
+  min-height:300px;
+  width:800px;
+  background-image: url('../img/SM517083.jpg');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+
+
+/* 
+[class^="stu-"] {
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:grey;
+  display: inline-block;
+  text-align: center;
+}
+ */
 
