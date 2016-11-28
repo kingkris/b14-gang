@@ -1,0 +1,140 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Border related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+~  border-width -
+    ^ default value 3px - normal
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  border-style: none solid dotted dashed 
+                  double ridge groove inset outset
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  border-color: 
+    ^ default value is color of text
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+border-top-style: ;
+border-top-width: ;
+border-top-color: ;
+
+border-right-style: ;
+border-right-width: ;
+border-right-color: ;
+
+border-bottom-style: ;
+border-bottom-width: ;
+border-bottom-color: ;
+
+border-left-style: ;
+border-left-width: ;
+border-left-color: ;
+
+Shorthand property
+border-top: [border-top-style border-top-width border-top-color]
+border-right: [border-right-style border-right-width border-right-color]
+border-bottom: [border-bottom-style border-bottom-width border-bottom-color]
+border-left: [border-left-style border-left-width border-left-color]
+
+
+Shorthand property
+border: [border-style border-width border-color]
+
+
+
+~  border-radius – length or percentage-
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+border-image:
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Border related properties
+   ========================================================================== */
+
+
+.img-box{
+  font-size:40px;
+  text-align: center;
+  color:red;
+  width:680px;
+  min-height: 100px;
+  background-color:wheat;
+  margin:20px auto;
+  transition:all 250ms linear;
+  padding:10px;
+  border-radius:10px;
+}
+.img-box img{
+  border-radius:8px;
+  display: block;
+}
+.box{
+  font-size:40px;
+  text-align: center;
+  color:red;
+  width:300px;
+  min-height: 100px;
+  background-color:wheat;
+  margin:20px auto;
+  transition:all 250ms linear;
+}
+
+.box1{
+  border-style: solid;
+  border-width: 3px;
+  border-color: #F0F;
+}
+
+.box1:hover{
+  border-radius:50%;
+  border-width: 20px;
+  border-color: #0F0;
+}
+
+.box2{
+  border-left: groove 10px red;
+  border-right: ridge 10px red;
+  border-top: groove 10px red;
+  border-bottom: ridge 10px red;
+  background-origin: content-box;
+  background-clip: content-box;
+  padding: 5px;
+}
