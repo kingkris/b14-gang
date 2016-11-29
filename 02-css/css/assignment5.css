@@ -1,0 +1,160 @@
+body{
+	background-color: #f5f5f5;
+	color: #333;
+	font-size: 14px;
+	font-family: "open Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+	color: #333;
+}
+h2{
+	font-size: 28px;
+}
+.original-img{
+	width: 980px;
+	margin: 0 auto;
+}
+.original-img img{
+	width: 100%;
+}
+.g-reviews h1{
+	text-align: center;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.rw-heading h2{
+	margin: 0;
+	float: left;
+}
+.rw-heading a{
+	float: right;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 8px 20px;
+	color: #777;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.rw-heading a:hover{
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+.rw-rate{
+	margin-right: 15px; 
+	background-color: #fff;
+	padding: 5px 10px 0;
+	-webkit-box-shadow: 3px 0 10px 1px rgba(0,0,0,.1);
+	box-shadow: 3px 0 10px 1px rgba(0,0,0,.1);
+}
+.rates{
+	text-align: center;
+	font-size: 13px;
+}
+.rates h3{
+	font-size: 60px;
+	margin: 0;
+}
+.rw-stars{
+	padding-left: 0;
+	text-align: center;
+}
+.rw-stars li{
+	list-style: none;
+	display: inline-block;
+}
+
+.span2{
+	width: 50%;
+	float: left;
+}
+.span3{
+	width: 33.333%;
+	float: left;
+}
+.rate-no{
+	padding-left: 20px;
+}
+.rate-no li{
+	list-style: none;
+	font-size: 13px;
+	padding: 4px 0px;
+}
+.rate-no span{
+	margin-left: 10px;
+	padding-left: 5px;
+	width: 80px;
+	display: inline-block;
+}
+.rate-no li:first-child span{
+	background-color: #a0c15a;
+}
+.feedback p{
+	color: #737373;
+	margin-top: 5px;
+	line-height: 22px;
+  font-weight: 300;
+}
+.feedback h3{
+	font-weight: 400;
+	margin: 0;
+}
+.feedback{
+	padding-left:60px;
+}
+.feedback:before{
+	content: "";
+	display: block;
+	background-image: url(img/feedback.png);
+}
+// font-face
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bwo6qx');
+  src:  url('../fonts/icomoon.eot?bwo6qx#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bwo6qx') format('truetype'),
+    url('../fonts/icomoon.woff?bwo6qx') format('woff'),
+    url('../fonts/icomoon.svg?bwo6qx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\f005";
+}
+.icon-star-o:before {
+  content: "\f006";
+}
+.icon-pencil:before {
+  content: "\f040";
+}
+.icon-star-half-empty:before {
+  content: "\f123";
+}
+.icon-star-half-full:before {
+  content: "\f123";
+}
+.icon-star-half-o:before {
+  content: "\f123";
+}
+
