@@ -109,7 +109,6 @@ h2{
 .feedback:before{
 	content: "";
 	display: block;
-	background-image: url(img/feedback.png);
 }
 // font-face
 
@@ -156,5 +155,16 @@ h2{
 }
 .icon-star-half-o:before {
   content: "\f123";
+}
+
+
+.heading span,
+.heading h4,
+.heading h5,
+.button a,
+.rating{
+	margin-left: 230px;
+	margin-top: 10px;
+	font-family: sans-serif;
 }
 
