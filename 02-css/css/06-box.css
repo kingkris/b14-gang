@@ -12,7 +12,23 @@
 Border related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 
+width, min-width, max-width
+height, min-height, max-height 
+padding
+margin
+overflow: visible | hidden | scroll | auto
+float : left | right | none
+clear: none | left | right | both
 
+
+box-sizing – content-box | padding-box | border-box
+Flexbox
+resize - none | both | horizontal | vertical 
+opacity 
+column-count
+column-gap
+column-fill – auto | balance
+column-rule - <'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
 
 ~  border-width -
     ^ default value 3px - normal
@@ -89,52 +105,3 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
    Demo of Border related properties
    ========================================================================== */
 
-
-.img-box{
-  font-size:40px;
-  text-align: center;
-  color:red;
-  width:680px;
-  min-height: 100px;
-  background-color:wheat;
-  margin:20px auto;
-  transition:all 250ms linear;
-  padding:10px;
-  border-radius:10px;
-}
-.img-box img{
-  border-radius:8px;
-  display: block;
-}
-.box{
-  font-size:40px;
-  text-align: center;
-  color:red;
-  width:300px;
-  min-height: 100px;
-  background-color:wheat;
-  margin:20px auto;
-  transition:all 250ms linear;
-}
-
-.box1{
-  border-style: solid;
-  border-width: 3px;
-  border-color: #F0F;
-}
-
-.box1:hover{
-  border-radius:50%;
-  border-width: 20px;
-  border-color: #0F0;
-}
-
-.box2{
-  border-left: groove 10px red;
-  border-right: ridge 10px red;
-  border-top: groove 10px red;
-  border-bottom: ridge 10px red;
-  background-origin: content-box;
-  background-clip: content-box;
-  padding: 5px;
-}
