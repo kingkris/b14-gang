@@ -9,15 +9,109 @@
    ========================================================================== */
 /*
 
-Border related style properties
+Box related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 
-width, min-width, max-width
-height, min-height, max-height 
-padding
-margin
-overflow: visible | hidden | scroll | auto
-float : left | right | none
+~  width: <length>
+    ^ default value auto - for block level it is 100%, for inline it is content width
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  min-width: <length>
+    ^ default value auto - for block level it is 100%, for inline it is content width
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  max-width: <length>
+    ^ default value auto - for block level it is 100%, for inline it is content width
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  height: <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  min-height: <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  max-height: <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  overflow: visible | hidden | scroll | auto
+    ^ default value visible
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements
+    ^ You can animate
+
+~  overflow-x: visible | hidden | scroll | auto
+~  overflow-y: visible | hidden | scroll | auto
+
+~  padding-top: 
+~  padding-right: 
+~  padding-bottom: 
+~  padding-left: 
+
+~  padding: 
+    ^ default value is
+            for ol and ul padding-left 40px
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements, except
+            padding-top and padding-bottom, they won't
+            work on inline elements
+    ^ You can animate
+
+
+
+~  margin-top: 
+~  margin-right: 
+~  margin-bottom: 
+~  margin-left: 
+
+~  margin: 
+    ^ default value 
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements, except
+            margin-top and margin-bottom, they won't
+            work on inline elements
+    ^ You can animate
+
+~  float : none | left | right
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements
+    ^ You can animate
+
+
+
 clear: none | left | right | both
 
 
@@ -29,65 +123,6 @@ column-count
 column-gap
 column-fill – auto | balance
 column-rule - <'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
-
-~  border-width -
-    ^ default value 3px - normal
-    ^ This property doesn't gets inherited
-    ^ This property can be applied to all elements
-    ^ You can animate
-
-~  border-style: none solid dotted dashed 
-                  double ridge groove inset outset
-    ^ default value none
-    ^ This property doesn't gets inherited
-    ^ This property can be applied to all elements
-    ^ You can animate
-
-~  border-color: 
-    ^ default value is color of text
-    ^ This property doesn't gets inherited
-    ^ This property can be applied to all elements
-    ^ You can animate
-
-border-top-style: ;
-border-top-width: ;
-border-top-color: ;
-
-border-right-style: ;
-border-right-width: ;
-border-right-color: ;
-
-border-bottom-style: ;
-border-bottom-width: ;
-border-bottom-color: ;
-
-border-left-style: ;
-border-left-width: ;
-border-left-color: ;
-
-Shorthand property
-border-top: [border-top-style border-top-width border-top-color]
-border-right: [border-right-style border-right-width border-right-color]
-border-bottom: [border-bottom-style border-bottom-width border-bottom-color]
-border-left: [border-left-style border-left-width border-left-color]
-
-
-Shorthand property
-border: [border-style border-width border-color]
-
-
-
-~  border-radius – length or percentage-
-    ^ default value is auto
-    ^ This property doesn't gets inherited
-    ^ This property can be applied to all elements
-    ^ You can animate
-
-border-image:
-
-border-collapse
-border-spacing
-empty-cells – show | hide
 
 
 
@@ -102,6 +137,57 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 */
 
 /* ==========================================================================
-   Demo of Border related properties
+   Demo of Box related properties
    ========================================================================== */
+
+.box1{
+    border: solid 1px red;
+    background-color:wheat;
+    transition: all 250ms ease;
+    max-width:400px;
+}
+.box1:hover{
+    width:600px;
+}
+
+.box-demo{
+    border: solid 4px red;
+    background-color:green;
+    min-width:200px;    
+    max-width:500px;
+    display: inline-block;   
+}
+
+.box2{
+    border: solid 4px red;
+    background-color:blue;
+    display: inline-block;
+    min-width:250px;
+    max-width:350px;
+    min-height:100px;
+    max-height:300px;
+    vertical-align: top;
+    overflow: auto
+}
+
+.box3{
+    border: solid 4px red;
+    background-color:blue;
+    padding:30px 20px;
+    margin:20px 10px 20px;
+}
+
+.wrap{
+    border: solid 4px red;
+    background-color: green;
+}
+.boxa1{
+    border: solid 4px black;
+    background-color: white;
+    float: left;
+}
+.boxa2{
+    border: solid 4px blue;
+    background-color: yellow;
+}
 
