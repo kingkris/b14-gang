@@ -191,3 +191,111 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
     background-color: yellow;
 }
 
+.logo{
+    background-color:rgba(250,0,0,.5);
+    border: solid 3px blue;
+    width:200px;
+    float: left;
+}
+.txt1{
+    margin:4px;
+    clear:both;
+}
+
+/* clear-fix */
+.wrap:after{ 
+  content:"";
+  display: block;
+  clear: both;
+}
+
+
+.head-wrap{
+  border: solid 1px black;
+  background-color:wheat;
+  margin: 20px 15px 0;
+}
+
+.menu1{
+  background-color:#FFF;
+}
+.menu1:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+.menu1 h1{
+  border: solid 3px red;
+  float: left;
+  margin:0;
+}
+.menu1 h1 img{
+  border: solid 1px black;
+  border-radius:50%;
+}
+.menu1 nav{
+  border: solid 3px black;
+  margin-left: 90px;
+}
+.menu1 nav ul{
+  border: solid 3px green;
+  margin:40px 0 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.menu1 nav ul li{
+  float: left;
+}
+.menu1 nav:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+.main-linkz{
+  float: left;
+}
+.social-linkz{
+  float: right;
+}
+
+.frnd1,
+.frnd{
+  border: solid 2px red;
+  margin:30px;
+  width:500px;
+}
+.frnd img{
+  border: solid 2px blue;
+  float: left;
+}
+.frnd .details{
+  border: solid 2px green;
+  margin-left: 120px;
+}
+
+.cf:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.frnd1 img{
+  border: solid 2px blue;
+  float: left;
+}
+.frnd1 .details{
+  border: solid 2px green;
+  float: left;
+}
+
+
+.box12{
+  width:70px;
+  height:70px;
+  border:dotted 1px red;
+  border-radius:6px;
+  background-color:wheat;
+  float: left;
+  margin:5px 
+}
+
