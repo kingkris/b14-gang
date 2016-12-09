@@ -110,12 +110,16 @@ Box related style properties
     ^ This property can be to all elements
     ^ You can animate
 
-
-
 clear: none | left | right | both
 
 
 box-sizing – content-box | padding-box | border-box
+
+
+
+
+
+
 Flexbox
 resize - none | both | horizontal | vertical 
 opacity 
@@ -290,12 +294,105 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 
 
 .box12{
-  width:70px;
-  height:70px;
-  border:dotted 1px red;
-  border-radius:6px;
+  width:50%;
+  height:100px;
+  border-radius:25px;
   background-color:wheat;
   float: left;
-  margin:5px 
+  margin:0 
 }
+
+.box13{
+  width:200px;
+  min-height:100px;
+  border:solid 10px red;
+  margin:20px auto;
+  background-color:wheat;
+  padding: 5px;
+}
+/*============================================
+=            CSS Columns or grids            =
+============================================*/
+.wrapper{
+  width:1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content{
+  background-color:lightblue;
+  min-height:50px;
+  padding:10px;
+  margin:10px;
+}
+
+.row{
+  padding:10px;
+  border: solid 1px red;
+  margin:20px auto;
+}
+.row:after{
+  content:"";
+  clear: both;
+  display: table;
+}
+.one-half{
+  float: left;
+  width:50%;
+}
+.one-third{
+  float: left;
+  width:33.3333%;
+}
+.one-fourth{
+  float: left;
+  width:25%;
+}
+
+/*=====  End of CSS Columns or grids  ======*/
+
+/*============================================
+=  CSS Columns or grids using box-sizing     =
+============================================*/
+.wrapper-bs{
+  width:1000px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing:border-box;
+}
+.wrapper-bs *{
+  box-sizing:border-box;
+}
+
+.row-bs{
+  padding:10px;
+  border: solid 1px red;
+  margin:20px auto;
+}
+.row-bs:after{
+  content:"";
+  clear: both;
+  display: table;
+}
+.one-half-bs{
+  float: left;
+  width:50%;
+  border:dotted 1px red;
+}
+.one-third-bs{
+  float: left;
+  width:33.3333%;
+  border:dotted 1px red;
+  padding:4px;
+}
+.one-fourth-bs{
+  float: left;
+  width:25%;
+  border:dotted 1px red;
+}
+
+/*=====  End of CSS Columns or grids  ======*/
+
+
+
+
 
