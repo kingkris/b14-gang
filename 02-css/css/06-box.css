@@ -392,7 +392,8 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 
 /*=====  End of CSS Columns or grids  ======*/
 
-
+.banner{}
+.banner img{width:100%}
 
 
 
