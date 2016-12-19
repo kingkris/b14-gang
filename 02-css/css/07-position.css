@@ -1,0 +1,132 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Position related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  position: static | relative | absolute | sticky  |  fixed
+    ^ default value static
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+    eg: 
+      .someclass{position:relative}
+      .someclass{position:absolute}
+      .someclass{position:sticky}
+      .someclass{position:fixed}
+
+~  top   : <length>
+~  left  : <length>
+~  bottom: <length>
+~  right : <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+~  z-index: auto | <integer>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+
+
+~  visibility: visible | hidden | collapse
+Applies to all elements
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+
+.greybg{
+  background-color:#DDD;
+  padding: 20px 0;
+}
+.whitebg{
+  background-color:#FFF;
+  padding: 20px 0;
+}
+
+.wrapper{
+  width:1000px;
+  border: solid 1px #CCC;
+  margin-left:auto;
+  margin-right: auto;
+}
+.wrapper:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+.wrapper h2{
+  font-weight: normal;
+  text-align: center;
+  border-bottom: solid 1px #CCC;
+}
+
+.box1{
+  border: solid 1px red;
+  position: static;
+  top:100px;
+}
+.box2{
+  border: solid 1px red;
+}
+
+.p-r-t{
+  position: relative;
+  top:45px;
+  left:100px;
+  background-color:lightblue;
+}
+.pr-tb{
+  position: relative;
+  bottom:100px;
+  top:100px;
+  right:50px;
+  background-color:lightgreen;
+}
+.box3{
+  width:60px;
+  height:60px;
+  border: solid 1px green;
+  background-color:rgba(0,255,0,.5);
+  float: left;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 60px;
+}
+.pr-lt{
+  position: relative;
+  right:60px;
+  top:10px;
+}
+
+.pr-z1{
+  position: relative;
+  z-index: 1;
+}
+

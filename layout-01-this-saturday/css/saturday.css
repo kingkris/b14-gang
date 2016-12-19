@@ -85,3 +85,84 @@ h6{
 	width:100%;
 }
 
+/*===========================
+=            CSR            =
+===========================*/
+
+.csr{
+	clear:both;
+	background-color:#252525;
+	background-image: url('../img/boy-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: right 85%;
+	padding:35px 25px 30px;
+}
+.csr h2{
+	color:#e02626;
+	font-size:30px;
+	font-weight:700;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin-top:0;
+}
+.csr p{
+	color:#FFF;
+	font-size:14px;
+	padding-right: 770px;
+}
+.csr .lead{
+	font-size:20px;
+	font-weight:900;
+}
+
+
+/*=====  End of CSR  ======*/
+
+
+/*===========================
+=            CSR1            =
+===========================*/
+
+.csr1{
+	clear:both;
+	background-color:#252525;
+	background-image: url('../img/boy-banner1.jpg');
+	background-repeat: no-repeat;
+	background-position: right 85%;
+	padding:35px 25px 30px;
+}
+.csr1 h2{
+	color:#e02626;
+	font-size:30px;
+	font-weight:700;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin-top:0;
+}
+.csr1 p{
+	color:#FFF;
+	font-size:14px;
+	padding-right: 770px;
+}
+.csr1 .lead{
+	font-size:20px;
+	font-weight:900;
+}
+.csr a,
+.csr1 a{
+	font-size:15px;
+	text-transform: uppercase;
+	color:#e02626;
+	display: inline-block;
+	padding:20px 20px 20px 40px;
+	border: solid 1px #e02626;
+	margin-bottom: 10px;
+
+}
+
+
+/*=====  End of CSR1  ======*/
+
+
+
+.
