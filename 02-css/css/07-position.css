@@ -130,3 +130,72 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   z-index: 1;
 }
 
+.box4{
+  border: solid 2px red;
+}
+.pa{
+  background-color:rgba(255,0,0,.5);
+  position: absolute;
+  border-color: #000;
+  left:20px;
+  top:20px;
+  width:100px;
+  height:100px;
+}
+span.pa{
+  z-index: 0;
+  top:70px;
+  left:70px;
+  background-color:rgba(0,0,255,.8);
+}
+div.pa{
+  z-index: 1;
+}
+
+.p-r{
+  position: relative;
+}
+
+/*----------  Banner styles  ----------*/
+.banner{
+  border: solid 5px grey;
+  border-radius:25px;
+  position: relative;
+}
+.banner img{
+  width:100%;
+  display: block;
+  border-radius:20px;
+}
+.banner h1{
+  margin:0;
+  padding:20px;
+  color:#FFF;
+  background-color:rgba(0,0,0,.8);
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  text-align: center;
+  font-weight:normal;
+  border-radius:0 0 20px 20px;
+}
+
+.arrow{
+  width:40px;
+  height:40px;
+  background-color:grey;
+  border-radius:50%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size:12px;
+  cursor: pointer;
+}
+.arrow.left{left:-20px;}
+.arrow.right{right:-20px;}
