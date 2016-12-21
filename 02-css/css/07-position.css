@@ -83,7 +83,17 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 .wrapper h2{
   font-weight: normal;
   text-align: center;
-  border-bottom: solid 1px #CCC;
+  background-color:grey;
+  border-bottom: solid 5px #CCC;
+  top:130px;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+
+
+
 }
 
 .box1{
@@ -199,3 +209,17 @@ div.pa{
 }
 .arrow.left{left:-20px;}
 .arrow.right{right:-20px;}
+
+
+.vis-demo{}
+.vis-demo p:nth-child(odd){
+  background-color:lightgreen;
+  visibility:collapse;
+}
+.vis-demo p:nth-child(even){
+  background-color:lightblue;
+}
+
+
+
+
