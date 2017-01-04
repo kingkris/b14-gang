@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <KriShne Gowda NL> -- <Manager> -- <@kingkris>
+    <KriShne Gowda NL> -- <Lead Designer> -- <@kingkris>
+    <KriShne Gowda NL> -- <Designer> -- <@kingkris>
+    <KriShne Gowda NL> -- <Lead Developer> -- <@kingkris>
+    <KriShne Gowda NL> -- <Developer> -- <@kingkris>
+
+# THANKS
+
+    <Adobe> - for making photoshop
+    <Adobe> - for making photoshop
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
