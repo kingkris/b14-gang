@@ -153,8 +153,9 @@ small, .font_small {font-size: 0.75em;}
 .container{
   margin-left: 15px;
   margin-right: 15px;
-  border: solid 1px red;
   transition: all 250ms ease;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .container h2{
   text-align: center;
@@ -192,6 +193,7 @@ small, .font_small {font-size: 0.75em;}
 }
 .col-one-third{
   padding:15px;
+  border: dashed 1px red;
 }
 @media (min-width:768px){
   .col-one-third{
@@ -207,15 +209,95 @@ small, .font_small {font-size: 0.75em;}
   padding-left: 0;
   list-style: none;
 }
-
 @media (min-width:768px){
   .services{
     text-align: center;
   }
 }
+.services li{
+  padding-left: 110px;
+  position: relative;
+}
+
+.services li:before{
+  position: absolute;
+  width:75px;
+  height:75px;
+  background-color: #fff;
+  border-radius: 50%;
+  left:15px;
+  top:0;bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+
+  font-family: 'feature-cons' !important;
+  font-size:40px;
+  color:#000;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 75px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition: all 250ms ease;
+
+}
+
+.services li.volley-ball:before{content: "\e906";}
+.services li.basket-ball:before{content: "\e905";}
+.services li.soccer-ball:before{content: "\e900";}
+
+.services li:hover:before{
+  color:red;
+  transform: rotate(360deg);
+  font-size: 60px
+}
+@media (min-width:768px){
+  .services li{
+    padding-left: 15px;
+    padding-top: 175px;
+  }
+  .services li:before{
+    width:120px;
+    height:120px;
+    left:0;right: 0;
+    top:15px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size:60px;
+    line-height: 120px;
+  }
+}
+.services li h3{
+  margin-top: 10px;
+}
 
 /*=====  End of Services styles  ======*/
 
+/**
+ *
+ * Font Faces
+ *
+ */
+@font-face {
+  font-family: 'feature-cons';
+  src:  url('../fonts/feature-cons.eot?5z0cb6');
+  src:  url('../fonts/feature-cons.eot?5z0cb6#iefix') format('embedded-opentype'),
+    url('../fonts/feature-cons.ttf?5z0cb6') format('truetype'),
+    url('../fonts/feature-cons.woff?5z0cb6') format('woff'),
+    url('../fonts/feature-cons.svg?5z0cb6#feature-cons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
