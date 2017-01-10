@@ -1,0 +1,512 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+  overflow-y: scroll;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+  background-color: #ede8f4;
+  /* background-image: url('../img/page-bg.png'); */
+  /* Using image in data format - http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUJGOTk2RTBENkY2MTFFNkE0MjJGQjc5N0E1Q0MwMUQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUJGOTk2RTFENkY2MTFFNkE0MjJGQjc5N0E1Q0MwMUQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxQkY5OTZERUQ2RjYxMUU2QTQyMkZCNzk3QTVDQzAxRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxQkY5OTZERkQ2RjYxMUU2QTQyMkZCNzk3QTVDQzAxRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqfixvEAAAAiSURBVHjaYpSUlJRiYGAQB+LzTAwQcB5EgDjPoAJSAAEGAD5dAyBjup4UAAAAAElFTkSuQmCC);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  font-family: 'Slabo 27px', serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+
+/*==================================
+=            Icon Fonts            =
+==================================*/
+
+@font-face {
+  font-family: 'kris-cons';
+  src:
+    url('../fonts/kris-cons.ttf?sls6tv') format('truetype'),
+    url('../fonts/kris-cons.woff?sls6tv') format('woff'),
+    url('../fonts/kris-cons.svg?sls6tv#kris-cons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'kris-cons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-marker:before      {content: "\f041";}
+.icon-twitter:before         {content: "\f099";}
+.icon-facebook:before        {content: "\f09a";}
+.icon-facebook-f:before      {content: "\f09a";}
+.icon-pinterest:before       {content: "\f0d2";}
+.icon-google-plus:before     {content: "\f0d5";}
+.icon-linkedin:before        {content: "\f0e1";}
+.icon-amazon:before          {content: "\f270";}
+.icon-soccer-ball:before     {content: "\e900";}
+.icon-basketball:before      {content: "\e905";}
+.icon-trophy:before          {content: "\e901";}
+.icon-volleyball:before      {content: "\e906";}
+.icon-shuttlecock:before     {content: "\e907";}
+.icon-golf:before            {content: "\e908";}
+.icon-clipboard-move:before  {content: "\e902";}
+.icon-award:before           {content: "\e903";}
+.icon-target-arrow:before    {content: "\e909";}
+.icon-umbrella:before        {content: "\e904";}
+.icon-world-wide-web:before  {content: "\e90a";}
+
+/*=====  End of Icon Fonts  ======*/
+
+.container{
+  padding:0 15px;
+}
+.container:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+
+/*===================================
+=            Site-header            =
+===================================*/
+
+.site-header{
+  background-color: #673ab7;
+  border-bottom: solid 4px #ff4081;
+}
+.site-header h1{
+  color:#FFF;
+  text-align: center;
+  margin:0;
+  padding:15px 0;
+  font-size: 2em;
+}
+.site-header h1 small{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+}
+
+@media (max-width:767px){
+  .hamburger{
+    width:34px;
+    height:34px;
+    background-color: #BDBDBD;
+    border-radius:50%;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+    transition:all 250ms ease;
+
+  }
+  .hamburger:hover span{
+    background-color: #ff4081;
+  }
+  .hamburger span{
+    width:20px;
+    height:3px;
+    background-color: #FFF;
+    border-radius:2px;
+    position: absolute;
+    left:7px;
+    transition:all 250ms ease;
+  }
+  .hamburger span:first-child{top:9px}
+  .hamburger span:nth-child(2){top:15px}
+  .hamburger span:last-child{top:21px}
+
+/*----------  hamburger when clicked  ----------*/
+  .hamburger.active{
+    background-color: #ff4081;
+  }
+  .hamburger.active span:first-child{
+    transform: rotate(45deg);
+    top:16px;
+  }
+  .hamburger.active span:last-child{
+    top:16px;
+    transform: rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2){
+    left: 120px;
+    width:1px;
+    opacity: 0;
+  }
+  .hamburger.active:hover span{
+    background-color: #FFF;
+  }
+
+
+
+}
+@media (min-width:768px){
+  .hamburger{display: none;}
+}
+
+.site-header ul{
+  padding-left: 0;
+  list-style: none;
+  margin:0;
+}
+.social-links{
+  padding:20px;
+}
+.help-links{
+  float: right;
+}
+.social-links li,
+.help-links li{
+  float: left;
+  padding-left: 10px;
+}
+.social-links li a,
+.help-links li a{
+  text-decoration: none;
+}
+.social-links li a i:before,
+.help-links li a i:before{
+  width:30px;
+  height:30px;
+  background-color: #BDBDBD;
+  border-radius: 50%;
+  display: block;
+  color:#FFF;
+  line-height: 30px;
+  text-align: center;
+}
+.social-links li a:hover i:before,
+.help-links li a:hover i:before{
+  background-color: #CCC;
+  color:#673ab7;
+}
+@media (max-width:979px){
+  .help-links li a span{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+
+}
+
+@media(min-width:768px){
+  .site-header h1{float: left;text-align:left}
+  .social-links{float: right;}
+
+}
+
+/*----------  Site-links  ----------*/
+.site-header nav{
+  position: absolute;
+  background-color: #D1C4E9;
+  left:0;
+  top:136px;
+  width:220px;
+  padding-bottom: 20px;
+  display: none;
+}
+.site-links li{}
+.site-links li a{
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding-left: 10px;
+  border-bottom:solid 1px #A89EBA;
+  line-height: 32px;
+}
+.site-links li a i:before{
+  color: #444;
+  display: inline-block;
+  width:25px;
+  text-align: center;
+}
+.site-links li a:hover{
+  color: #FFF;
+  background-color: #673ab7;
+  border-bottom-color:#673ab7;
+}
+.site-links li a:hover i:before{
+  color: #FFF;
+}
+
+
+/*=====  End of Site-header  ======*/
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

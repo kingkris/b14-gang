@@ -282,6 +282,56 @@ small, .font_small {font-size: 0.75em;}
 }
 
 /*=====  End of Services styles  ======*/
+/*=============================
+=            Games            =
+=============================*/
+.games{}
+.games .col-one-third{position: relative;}
+.games i {
+  width:50px;
+  height:50px;
+  background-color: #fff;
+  border-radius:50%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size:40px;
+  line-height: 50px;
+  text-align: center;
+  color:green;
+}
+.games > div > div {
+  margin-left: 60px;
+  border: solid 1px red;
+}
+@media (min-width:768px){
+  .games i {
+    width:60px;
+    height:60px;
+    background-color: #fff;
+    border-radius:50%;
+    position: absolute;
+    top:0;
+    left:0;right:0;
+    margin-top: 1px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 60px;
+  }
+  .games > div > div {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+
+}
+
+/*=====  End of Games  ======*/
+
+
+
 
 /**
  *
@@ -299,6 +349,67 @@ small, .font_small {font-size: 0.75em;}
   font-style: normal;
 }
 
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'feature-cons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-soccer-ball:before {
+  content: "\e900";
+}
+.icon-basketball:before {
+  content: "\e905";
+}
+.icon-trophy:before {
+  content: "\e901";
+}
+.icon-volleyball:before {
+  content: "\e906";
+}
+.icon-shuttlecock:before {
+  content: "\e907";
+}
+.icon-golf:before {
+  content: "\e908";
+}
+.icon-clipboard-move:before {
+  content: "\e902";
+}
+.icon-award:before {
+  content: "\e903";
+}
+.icon-target-arrow:before {
+  content: "\e909";
+}
+.icon-umbrella:before {
+  content: "\e904";
+}
+
+
+.style1{
+  background-color: green;
+  color:white;
+  font-size:60px;
+}
+.style1 i{
+  background-color: lightgreen;
+  color:red;
+  font-size:90px;
+  border-radius:50%;
+}
 
 
 /* ==========================================================================
