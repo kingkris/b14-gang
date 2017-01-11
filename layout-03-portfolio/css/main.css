@@ -140,11 +140,30 @@ small, .font_small {font-size: 0.75em;}
 
 .container{
   padding:0 15px;
+  transition:all 250ms ease;
+  position: relative;
 }
 .container:after{
   content:"";
   display: block;
   clear: both;
+}
+@media(min-width:768px){
+  .container{
+    width:768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media(min-width:980px){
+  .container{
+    width:960px;
+  }
+}
+@media(min-width:1200px){
+  .container{
+    width:1170px;
+  }
 }
 
 
@@ -262,6 +281,13 @@ small, .font_small {font-size: 0.75em;}
   background-color: #CCC;
   color:#673ab7;
 }
+@media (min-width:768px){
+  .social-links{
+    position: absolute;
+    top:0;
+    right:0;
+  }
+}
 @media (max-width:979px){
   .help-links li a span{
     border: 0;
@@ -279,21 +305,24 @@ small, .font_small {font-size: 0.75em;}
 
 @media(min-width:768px){
   .site-header h1{float: left;text-align:left}
+  .site-header h1 small{padding-left: 40px;}
   .social-links{float: right;}
 
 }
 
 /*----------  Site-links  ----------*/
-.site-header nav{
-  position: absolute;
-  background-color: #D1C4E9;
-  left:0;
-  top:136px;
-  width:220px;
-  padding-bottom: 20px;
-  display: none;
+@media(max-width:767px){
+  .site-header nav{
+    position: absolute;
+    background-color: #D1C4E9;
+    left:0;
+    top:136px;
+    width:220px;
+    padding-bottom: 20px;
+    display: none;
+  }
 }
-.site-links li{}
+
 .site-links li a{
   display: block;
   color: #000;
@@ -310,11 +339,41 @@ small, .font_small {font-size: 0.75em;}
 }
 .site-links li a:hover{
   color: #FFF;
-  background-color: #673ab7;
-  border-bottom-color:#673ab7;
+  background-color: #ff4081;
+  border-bottom-color:#ff4081;
 }
 .site-links li a:hover i:before{
   color: #FFF;
+}
+@media(min-width:768px){
+  .site-header nav{
+    float: left;
+    clear: left;
+  }
+  .site-links li{
+    float: left;
+  }
+  .site-links li a{
+    background-color: #d1c4e9;
+    border-radius:6px 6px 0 0;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+@media(min-width:768px) and (max-width:980px){
+  .site-links li a span{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
 }
 
 

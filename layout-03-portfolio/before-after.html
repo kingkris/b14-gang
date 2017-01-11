@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>trash</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+<p>Before &amp; After</p>
+
+<hr>
+<hr>
+
+<div class="box">
+  <div class="box-content">
+    <h1>Some heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat, nesciunt, dolores vero voluptatibus veritatis facilis aliquid dignissimos. Harum alias officiis laudantium quos quod earum rem dignissimos non libero recusandae?</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+    </ul>
+
+  </div>
+</div>
+<style>
+
+
+.box ul{
+  border: solid 1px green;
+  background-color: #F3E6FA;
+}
+.box ul:before{
+  border: solid 1px green;
+  content: "i am before";
+}
+.box ul:after{
+  border: solid 1px green;
+  content: "i am after";
+}
+
+  .box{
+    border: solid 1px red;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #FFD6EF;
+    position: relative;
+  }
+  .box:before{
+    content: "\0065";
+    border: solid 1px red;
+    position: absolute;
+    top: 0;bottom: 0;
+    left: -37.5px;
+    margin-top: auto;margin-bottom: auto;
+    width: 75px;
+    height: 75px;
+    border-radius: 50% 0;
+    background-color: rgba(0,0,0,.75);
+    transform: rotate(45deg);
+    color: #FFF;
+    text-align: center;
+    line-height: 75px;
+    z-index: 1;
+
+
+  font-family: 'kris-cons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+
+  }
+  .box:after{
+    content: "";
+    border-bottom: dotted 4px red;
+    position: absolute;
+    top: 0;bottom: 0;
+    left: -82px;
+    margin-top: auto;margin-bottom: auto;
+    width: 140%;
+    height: 0;
+    border-radius: 50% 0;
+    transform: rotate(45deg);
+  }
+  .box-content{
+    position: relative;
+    z-index: 2;
+  }
+
+@font-face {
+  font-family: 'kris-cons';
+  src:
+    url('fonts/kris-cons.ttf?sls6tv') format('truetype'),
+    url('fonts/kris-cons.woff?sls6tv') format('woff'),
+    url('fonts/kris-cons.svg?sls6tv#kris-cons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'kris-cons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-marker:before      {content: "\f041";}
+.icon-twitter:before         {content: "\f099";}
+.icon-facebook:before        {content: "\f09a";}
+.icon-facebook-f:before      {content: "\f09a";}
+.icon-pinterest:before       {content: "\f0d2";}
+.icon-google-plus:before     {content: "\f0d5";}
+.icon-linkedin:before        {content: "\f0e1";}
+.icon-amazon:before          {content: "\f270";}
+.icon-soccer-ball:before     {content: "\e900";}
+
+
+</style>
+
+
+</body>
+</html>
