@@ -183,6 +183,66 @@ small, .font_small {font-size: 0.75em;}
   }
 }
 /*----------  grids  ----------*/
+.dabba{
+  padding:15px;
+}
+
+.dabba .i-dabba{border: dotted 1px red;}
+
+.dabba ul li{color:green}
+.dabba ul li.heading{font-weight:bold;color:red}
+.dabba ul a.heading{font-weight:bold;color:red}
+
+.lightblue-bg.dabba{border: solid 3px red;}
+
+p.some{}
+p#some{}
+p:hover{}
+
+a.active:link{}
+a.active:hover{}
+a.active:active{}
+
+a[href]:link{}
+div.dabba:before{}
+div.dabba:before:hover{}
+
+.dabba1{
+  width:200px;
+  height:200px;
+  background-color: #ED23BB;
+  color:#FFF;
+  margin:20px auto;
+  line-height: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.dabba1:before{
+  width:40px;
+  height:40px;
+  background-color: #8723ED;
+  color:#FFF;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  content:"before";
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  left:-40px;
+  font-size:11px;
+}
+.dabba1:hover:before{
+  background-color: #23ED9A;
+}
+
+.i-dabba + p {
+  text-decoration: underline;
+}
+
+
+
 .row{
   margin:15px -15px;
 }
@@ -385,8 +445,13 @@ small, .font_small {font-size: 0.75em;}
   transform:rotate(180deg)
 }
 
+#para1              {color:black}
+.normal-text        {color:red;}
+p                   {color:yellow !important;}
+p                   {color:green !important;}
 
-
+.specificity #para2 {color:purple !important}
+#para2              {color:violet !important}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
