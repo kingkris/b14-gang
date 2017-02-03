@@ -452,6 +452,182 @@ p                   {color:green !important;}
 
 .specificity #para2 {color:purple !important}
 #para2              {color:violet !important}
+
+
+
+/*----------  Side menu  ----------*/
+/*----------  Direct child selector  ----------*/
+
+.side-menu>ul{
+  list-style: none;
+  padding-left: 0;
+}
+.side-menu>ul>li{}
+.side-menu>ul>li>a{
+  display: block;
+  background-color: #FBEAFF;
+  color:#666;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size:13px;
+  padding:0 10px 0 25px;
+  line-height: 30px;
+  border-bottom: solid 1px #F3BEFF;
+  position: relative;
+  transition:all 250ms ease;
+}
+.side-menu>ul>li>a:before{
+  content:"";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: #E98CFF;
+  position: absolute;
+  left:8px;
+  top:10px;
+}
+.side-menu > ul > li > a:hover{
+  background-color: #E98CFF;
+  color:#DFDFDF;
+  border-bottom: solid 1px #F3BEFF
+}
+.side-menu > ul > li > a:hover:before{
+  background-color: #DFDFDF;
+}
+
+.side-menu{
+
+}
+/*
+a[href="#"]{
+  text-decoration:line-through !important;
+}
+ */
+a[href*="icon"]{
+  color:red !important;
+}
+[href*="scissors"]:after{
+  content:" i";
+}
+[href^="http:"]:after{
+  content:" nw";
+}
+[href$=".jpg"]:after{
+  content:" nw";
+}
+
+/*=================================
+=            font face            =
+=================================*/
+
+.social-links{
+  float: right;
+  padding-left: 0;
+  list-style: none;
+}
+.social-links li{
+  float: left;
+  margin-left: 10px;
+}
+.social-links li a{
+  color:#444;
+  text-decoration: none;
+}
+.social-links li a i{
+  background-color: #9A9A9A;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  color:#FFF;
+  display: inline-block;
+}
+@media (max-width:767px){
+  .social-links li a span{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+}
+
+
+
+
+
+/**
+ *
+ * Font Faces
+ *
+ */
+@font-face {
+  font-family: 'feature-cons';
+  src:  url('../fonts/feature-cons.eot?5z0cb6');
+  src:  url('../fonts/feature-cons.eot?5z0cb6#iefix') format('embedded-opentype'),
+    url('../fonts/feature-cons.ttf?5z0cb6') format('truetype'),
+    url('../fonts/feature-cons.woff?5z0cb6') format('woff'),
+    url('../fonts/feature-cons.svg?5z0cb6#feature-cons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'feature-cons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-soccer-ball:before {
+  content: "\e900";
+}
+.icon-basketball:before {
+  content: "\e905";
+}
+.icon-trophy:before {
+  content: "\e901";
+}
+.icon-volleyball:before {
+  content: "\e906";
+}
+.icon-shuttlecock:before {
+  content: "\e907";
+}
+.icon-golf:before {
+  content: "\e908";
+}
+.icon-clipboard-move:before {
+  content: "\e902";
+}
+.icon-award:before {
+  content: "\e903";
+}
+.icon-target-arrow:before {
+  content: "\e909";
+}
+.icon-umbrella:before {
+  content: "\e904";
+}
+
+
+/*=====  End of font face  ======*/
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -632,3 +808,7 @@ p                   {color:green !important;}
         page-break-after: avoid;
     }
 }
+
+
+
+
