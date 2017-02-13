@@ -1,0 +1,15 @@
+.wrap{
+	padding-top: 40px;
+}
+.box{
+	background-color: pink;
+	border: 1px solid red;
+}
+.box1{
+	background-color: wheat;
+	border: 1px solid red;
+	margin-bottom: 10px;
+}
+.hide{
+	display: none;
+}

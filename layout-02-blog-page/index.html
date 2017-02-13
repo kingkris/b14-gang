@@ -34,6 +34,107 @@
     </div>
   </div>
   <!-- /.row -->
+
+  <div class="form-wrap">
+    <form action="whatever.html" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-row">
+          <label for="username">USer Name</label><input type="text" name="asUsername" placeholder="Enter your name" id="username" value="Ranganna">
+        </div>
+        <div class="form-row">
+          <label for="passwrod">Password</label><input type="password" name="asPass" placeholder="Enter your password" id="passwrod">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <div class="form-row">
+          <label>First NAme
+            <input type="text" name="fName" placeholder="Enter your first name">
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Last NAme</label>
+            <input type="text" name="lName" placeholder="Enter your last name" value="Gowda">
+        </div>
+        <div class="form-row">
+          <label>Upload your photo</label>
+            <input type="file" name="photo">
+        </div>
+        <div class="form-row">
+          <label>Message</label>
+            <textarea name="message" placeholder="whatever message">whatever message you write in between will be the preffilled value
+            </textarea>
+        </div>
+        <div class="form-row">
+          <label>CitY</label>
+            <select multiple name="city">
+              <option value="">Select your city</option>
+              <option value="Mysore">Mysore</option>
+              <option value="Mandya">Mandya</option>
+              <option value="Madduru">Madduru</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Davanagere">Davanagere</option>
+            </select>
+        </div>
+        <div class="form-row">
+          <label>CitY</label>
+            <select>
+              <option value="">Select your city</option>
+              <optgroup label="Metro Cities">
+                <option value="Kolkatta">Kolkatta</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bengaluru">Bengaluru</option>
+              </optgroup>
+              <optgroup label="Other Cities">
+                <option value="Mysore">Mysore</option>
+                <option value="Mandya">Mandya</option>
+                <option value="Madduru">Madduru</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Davanagere">Davanagere</option>
+              </optgroup>
+            </select>
+        </div>
+        <div class="form-row">
+          <p>Choose the preferred Batch</p>
+          <label for="batch01">Morning</label>
+          <input type="radio" name="batch" id="batch01" value="Morning" checked disabled>
+
+          <label for="batch02">Afternoon</label>
+          <input type="radio" name="batch" id="batch02" value="Afternoon">
+
+          <label for="batch03">Evening</label>
+          <input type="radio" name="batch" id="batch03" value="Evening">
+
+          <label for="batch04">Weekend</label>
+          <input type="radio" name="batch" id="batch04" value="Weekend">
+        </div>
+        <div class="form-row">
+          <p>Choose the preferred Batch</p>
+          <label for="suject01">HMTL</label>
+          <input type="checkbox" name="suject" id="suject01" value="HMTL" checked disabled>
+
+          <label for="suject02">CSS</label>
+          <input type="checkbox" name="suject" id="suject02" value="CSS">
+
+          <label for="suject03">Wordpress</label>
+          <input type="checkbox" name="suject" id="suject03" value="Wordpress">
+
+          <label for="suject04">jQuery</label>
+          <input type="checkbox" name="suject" id="suject04" value="jQuery">
+        </div>
+      </fieldset>
+
+      <input type="submit" value="Register Now!">
+      <input type="reset">
+      <input type="image" src="img/scissors-icon.png">
+      <input type="button" value="Just a button">
+    </form>
+  </div>
+
+
+
 </div><!-- /.container -->
 
 
