@@ -33,12 +33,51 @@
 <div class="login-wrap">
   <header>
     <h2>Welcome!</h2>
-    <span class="ribbon">
+    <span class="ribbon ribbon-left">
       <a href="#">Already a member?</a>
     </span>
   </header>
-  <div class="login-body">
-    some content will come here
+  <div class="login-content">
+    <div class="login-body">
+      <form action="thankyou.html" method="get" formnovalidate>
+        <div class="form-row">
+          <label for="emailid">Email</label>
+          <input type="email" name="Email" placeholder="Enter your email" required id="emailid" autofocus maxlength="5">
+        </div>
+        <div class="form-row">
+          <label for="passworda">Password</label>
+          <input type="password" name="Password" placeholder="Password here" required id="passworda">
+        </div>
+        <div class="form-row">
+          <label for="salarya">Salary</label>
+          <input type="number" name="Salary" placeholder="CTC?" id="salarya"  min="6000" max="60000" step="500">
+        </div>
+        <div class="form-row">
+          <label for="agea">Age</label>
+          <input type="number" name="Age" placeholder="How young are you?" id="agea" min="18" max="48">
+        </div>
+        <div class="form-row">
+          <label for="agea">Age</label>
+          <input type="range" name="ctca" placeholder="How young are you?" id="agea" min="18" max="48">
+        </div>
+        <div class="form-row">
+          <label for="agea">Date</label>
+          <input type="date" name="ctca" placeholder="How young are you?">
+          <input type="color" name="ctca" placeholder="How young are you?">
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div class="login-links">
+
+<input type="search" name="" value="" placeholder="">
+      <span class="ribbon ribbon-left">
+        <a href="#">Already a member?</a>
+      </span>
+
+
+      some content will come here
+    </div>
   </div>
 </div>
 
