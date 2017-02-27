@@ -1,0 +1,383 @@
+/*
+ * This code is done using html5boilerplate, bootstrap 4 and other fixes.
+ * We at dzineden use this code as the base for our websites and apps,
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {font-size: 1em;}
+body {
+  background-color: white;
+  background-image: url('../img/food.jpg');
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #444;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  font-family: 'Sansita', sans-serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+strong, b {font-weight:400;}
+
+/*----------  Header  ----------*/
+
+.site-header{
+  background-color: #F44336;
+  border-radius: 10px 10px 0 0;
+  padding:5px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,.5);
+}
+.site-header:after{
+  border-top: solid 4px #efeeee;
+  content:"";
+  background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6REVENDM4NzFGMjc5MTFFNjg3QkZGQUVGQjQ3NDIwOUEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6REVENDM4NzJGMjc5MTFFNjg3QkZGQUVGQjQ3NDIwOUEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpERUQ0Mzg2RkYyNzkxMUU2ODdCRkZBRUZCNDc0MjA5QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpERUQ0Mzg3MEYyNzkxMUU2ODdCRkZBRUZCNDc0MjA5QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtUgjxcAAADESURBVHjaYnz6/MV/LnY2BkLgPxB//fGTgenVxy9ngJjh////eDW8+fQFiL/uYwKyrb79/LXgxYfPDP/+Ydf08et3oOm/TgKZPkwKYkK/gYykn7//tD1//4nhz99/KIqBhjG8//r9CZAZBFT7nfH9u3dwyQev3mUxMzFNEhfgZWZjYWb49ecvA9CQb0Dn2gMVnwGpYUI2DSg47e+/f6Ev3n/6DnQCw6uPn4Fq/yfBFIMAig1INlkDqRVAPA2ouB1ZDiDAADYKZ6Mi8i6DAAAAAElFTkSuQmCC');
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -11px;
+  height:11px;
+}
+.site-header h1{
+  color:#FFF;
+  text-align: center;
+  margin:0;
+}
+
+/*----------  NAV  ----------*/
+
+nav{
+  background-color: rgba(0,0,0,.75);
+  border-top: ridge 2px #000;
+  position: fixed;
+  left:0;right:0;
+  bottom:0;
+  height:40px;
+}
+nav ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin:0;
+  text-align: center;
+}
+nav ul li{display: inline-block;}
+nav ul li a{display: block;line-height: 40px;}
+
+
+/*----------  Login  ----------*/
+.login-wrap{
+  max-width: 600px;
+  padding:0 15px;
+  margin:35px auto;
+}
+.login-wrap header{
+  margin:0 10px;
+  border: solid 1px #33a9b4;
+  border-bottom: none;
+  border-radius:15px 15px 0 0;
+  background-color: rgba(41, 160, 171, .8);
+}
+.login-wrap header:after{
+  clear: both;
+  content:"";
+  display: block;
+}
+.login-wrap header h2{
+  float: left;
+  margin:0;
+  color:#FFF;
+  padding-left:15px;
+  line-height: 50px;
+}
+.login-wrap  .ribbon{
+  float: right;
+  background-color: #f8bd00;
+  margin-top: 10px;
+  margin-right: -10px;
+  padding:0 25px 0 15px;
+  position: relative;
+  line-height: 30px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.4);
+}
+.login-wrap  .ribbon:before{
+  content:"";
+  width:0;
+  height:0;
+  position: absolute;
+  left:-15px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #f8bd00 transparent;
+  top:0;
+}
+.login-wrap  .ribbon:after{
+  content:"";
+  width:0;
+  height:0;
+  position: absolute;
+  right:0;
+  bottom:-8px;
+  border-style: solid;
+  border-width: 8px 10px 0 0;
+  border-color: #a46c01 transparent transparent transparent;
+}
+
+.login-wrap  .ribbon a{
+  color:#a46c01;
+  font-size:16px;
+  font-weight:400;
+  text-decoration: none;
+}
+
+
+
+.login-body{
+  background-color: #fff;
+  border-radius:10px;
+  min-height: 200px;
+  border-bottom: double 5px #CCC;
+  position: relative;
+}
+.login-body:after{
+  content:"";
+  width:100%;
+  height:30px;
+  border-radius:10px;
+  border-bottom: double 5px #CCC;
+  position: absolute;
+  bottom:1px;
+  left:0;
+}
+
+.login-content{
+  background-color: rgba(255,255,255,.9);
+  border-radius:10px;
+}
+.login-links{
+  min-height: 120px;
+  padding-top: 25px;
+}
+
+.form-row{
+  border-bottom: solid 1px #e1e1e1;
+  line-height: 40px;
+  padding:4px 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
