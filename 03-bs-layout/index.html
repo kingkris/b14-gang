@@ -64,19 +64,90 @@
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
     </div>
 </section>
+<div class="kg-grey-bg">
+  <section class="container">
+    <div class="kg-header wow wobble">
+      <h2>This is the Section Headline, Continues to Two Lines</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 wow slideInLeft">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+      </div>
+      <div class="col-sm-6  wow slideInRight">
+        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+  </section>
+</div>
+<section>
+  <div class="container">
+    <div class="kg-title-text text-center">
+      <h2>
+        Big Community of People Like You 
+      </h2>
+      <p class="lead">We’re proud of our products, and we’re  really excited when we get feedback from our users.</p>
+    </div>
 
-<section class="container">
-  <div class="kg-header wow wobble">
-    <h2>This is the Section Headline, Continues to Two Lines</h2>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
-  </div>
+
   <div class="row">
-    <div class="col-sm-6 wow slideInLeft">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+    <h2>Media Slider Carousel BS3</h2>
+  </div>
+  <div class='row'>
+    <div class='col-md-8'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>          
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>          
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>          
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
     </div>
-    <div class="col-sm-6  wow slideInRight">
-      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    </div>
+  </div>
+
+
+
   </div>
 </section>
 
@@ -86,7 +157,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-
+<script>
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
+</script>
 
     <script>
       new WOW().init();
