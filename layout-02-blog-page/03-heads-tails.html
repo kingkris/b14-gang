@@ -17,7 +17,7 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Slab" rel="stylesheet"> -->
 
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  <script src="js/01-js-demo.js" async defer></script>
+  <script src="js/03-heads-tails-game.js" async defer></script>
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -58,26 +58,31 @@
     <h3>heading</h3>
     <span>close</span>
   </div>
-  <nav class="side-menu">
-    <ul>
-      <script>
-        for (var i = 0; i < 5; i++) {
-          markup = '<li><a href="#">JS0'+ i + '</a></li>';
-          document.write(markup);
-          console.log(markup);
-        }
-      </script>
-    </ul>
-  </nav>
 
 </div>
 <div class="main">
   <hr>
-  <div class="lightblue-bg dabba" id="content1"
-    onclick="javascript:alert('hey hi')">
+  <div class="lightblue-bg dabba" id="content1">
     dabba
+
+    <div id="win-status"></div>
   </div>
   <hr>
+
+  <style>
+    #win-status span{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      margin:0 5px 5px 0;
+    }
+    .won{background-color: green; }
+    .lost{background-color: red; }
+  </style>
 </div>
 </body>
 </html>
