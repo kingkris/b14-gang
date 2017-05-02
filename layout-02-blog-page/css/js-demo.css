@@ -290,11 +290,13 @@ small, .font_small {font-size: 0.75em;}
   left:8px;
   top:10px;
 }
+.side-menu > ul > li > a.active,
 .side-menu > ul > li > a:hover{
   background-color: #E98CFF;
   color:#DFDFDF;
   border-bottom: solid 1px #F3BEFF
 }
+.side-menu > ul > li > a.active:before,
 .side-menu > ul > li > a:hover:before{
   background-color: #DFDFDF;
 }

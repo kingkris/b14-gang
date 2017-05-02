@@ -36,11 +36,11 @@
 <div class="sidebar">
   <div class="title">
     <h3>Menu</h3>
-    <span>close</span>
+    <span class="close"></span>
   </div>
   <nav class="side-menu">
     <ul>
-      <li><a href="01-js-intro.html">link01</a></li>
+      <li><a href="01-js-intro.html" class="active">link01</a></li>
       <li><a href="01-jquery-intro.html">link02</a></li>
       <li><a href="03-heads-tails.html">link03</a>
         <ul>
@@ -54,20 +54,50 @@
   </nav>
   <div class="title">
     <h3>heading</h3>
-    <span>close</span>
+    <span class="close"></span>
   </div>
+  <nav class="side-menu">
+    <ul>
+      <li><a href="01-js-intro.html">link01</a></li>
+      <li><a href="01-jquery-intro.html">link02</a></li>
+      <li><a href="03-heads-tails.html">link03</a></li>
+      <li><a href="#">link04</a></li>
+    </ul>
+  </nav>
 
 </div>
 <div class="main">
   <hr>
-  <div class="lightblue-bg dabba" id="content1">
+  <div class="lightblue-bg" id="content1">
     <p>lightblue bg</p>
+
   </div>
+  <a href="#" class="btn1">Click me</a>
+  <div class="dabba">
+    dabba
+  </div><!-- /.dabba -->
   <hr>
 
   <style>
+  .title span{}
+  .title span:after{
+    content: "Open";
+  }
+
+  .title span.close:after{
+    content: "Close";
+  }
+
+  .title{
+    cursor: pointer;
+  }
+
+  .lightblue-bg{
+    min-height: 1200px;
+  }
   .dabba{
     padding: 20px;
+    border: solid 1px red;
   }
   .dabba:after{
     content: "";
@@ -96,8 +126,12 @@
   </style>
 </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+
   <script src="js/01-jquery-intro.js" async defer></script>
+
 
 
 </body>
