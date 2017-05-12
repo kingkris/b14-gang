@@ -72,30 +72,18 @@
     <p>lightblue bg</p>
 
   </div>
-  <a href="#" class="btn1">Click me</a>
   <div class="dabba">
-    dabba
     <form action="" name="demo-form">
-      <div class="form-row">
-        <input type="text" name="dfName1" id="dfName1">
-        <span></span>
-      </div><!-- /.form-row -->
-      <div class="form-row">
-        <input type="text" name="dfName2" id="dfName2">
-        <span></span>
-      </div><!-- /.form-row -->
-      <div class="form-row">
-        <input type="text" name="dfName3" id="dfName3">
-        <span></span>
-      </div><!-- /.form-row -->
-      <div class="form-row">
-        <input type="text" name="dfName4" id="dfName4">
-        <span></span>
-      </div><!-- /.form-row -->
-      <div class="form-row">
-        <input type="text" name="dfName5" id="dfName5">
-        <span></span>
-      </div><!-- /.form-row -->
+        <div class="form-row active">
+          <input type="text" name="dfName" id="dfName">
+          <span>Primary Number</span>
+          <div class="df-radio">
+            <label><input type="radio" name="df-Mobile">
+            Make this primary number</label>
+          </div>
+          <a href="#" class="rm-btn">Remove</a>
+        </div><!-- /.form-row -->
+      <a href="#" class="add-mobile-btn">Add another mobile</a>
     </form>
   </div><!-- /.dabba -->
   <hr>
@@ -114,6 +102,12 @@
   }
   .form-row span{color:#37AC37; }
   .form-row span.error{color: #F00 }
+  .df-radio{display: inline-block; }
+  .rm-btn{float: right;}
+  .form-row.active .df-radio{display: none;}
+  .form-row span{display: none;}
+  .form-row.active span{display: inline-block;}
+  .form-row.active .rm-btn{display: none;}
 </style>
 
 
@@ -121,7 +115,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
 
-  <script src="js/02-attaching-events.js" async defer></script>
+  <script src="js/03-cloning.js" async defer></script>
 
 
 
