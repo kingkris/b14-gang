@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="@KinGKriS">
+  <meta name="designer" content="@KinGKriS">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/js-demo.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Slab" rel="stylesheet"> -->
+
+</head>
+<body>
+<!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+
+<header class="site-header">
+  <h1>Responsive layout demo</h1>
+  <div class="visuallyhidden">Social Links</div>
+  <ul class="social-links" id="social">
+    <li><a href="#"><i class="icon-golf"></i> <span>Facebook</span></a></li>
+    <li><a href="#"><i class="icon-golf"></i> <span>Twitter</span></a></li>
+    <li><a href="#"><i class="icon-golf"></i> <span>Linkedin</span></a></li>
+  </ul>
+</header>
+
+<div class="sidebar">
+  <div class="title">
+    <h3>Menu</h3>
+    <span class="close"></span>
+  </div>
+  <nav class="side-menu">
+    <ul>
+      <li><a href="01-js-intro.html" class="active">link01</a></li>
+      <li><a href="01-jquery-intro.html">link02</a></li>
+      <li><a href="03-heads-tails.html">link03</a>
+        <ul>
+          <li><a href="#">Sub link 01</a></li>
+          <li><a href="#">Sub link 02</a></li>
+          <li><a href="#">Sub link 03</a></li>
+        </ul>
+      </li>
+      <li><a href="#">link04</a></li>
+    </ul>
+  </nav>
+  <div class="title">
+    <h3>heading</h3>
+    <span class="close"></span>
+  </div>
+  <nav class="side-menu">
+    <ul>
+      <li><a href="01-js-intro.html">link01</a></li>
+      <li><a href="01-jquery-intro.html">link02</a></li>
+      <li><a href="03-heads-tails.html">link03</a></li>
+      <li><a href="#">link04</a></li>
+    </ul>
+  </nav>
+
+</div>
+<div class="main">
+  <hr>
+  <div class="lightblue-bg" id="content1">
+    <p>lightblue bg</p>
+    <a href="#" class="btn-anim">Animate</a>
+  </div>
+  <div class="dabba wow slideInUp" data-wow-duration="2s" data-wow-delay="5s">
+    <form action="" name="demo-form">
+        <div class="form-row active">
+          <input type="text" name="dfName" id="dfName">
+          <span>Primary Number</span>
+          <div class="df-radio">
+            <label><input type="radio" name="df-Mobile">
+            Make this primary number</label>
+          </div>
+          <a href="#" class="rm-btn">Remove</a>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <input type="text" name="dfName" id="dfName">
+          <span>Primary Number</span>
+          <div class="df-radio">
+            <label><input type="radio" name="df-Mobile">
+            Make this primary number</label>
+          </div>
+          <a href="#" class="rm-btn">Remove</a>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <input type="text" name="dfName" id="dfName">
+          <span>Primary Number</span>
+          <div class="df-radio">
+            <label><input type="radio" name="df-Mobile">
+            Make this primary number</label>
+          </div>
+          <a href="#" class="rm-btn">Remove</a>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <input type="text" name="dfName" id="dfName">
+          <span>Primary Number</span>
+          <div class="df-radio">
+            <label><input type="radio" name="df-Mobile">
+            Make this primary number</label>
+          </div>
+          <a href="#" class="rm-btn">Remove</a>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <input type="text" name="dfName" id="dfName">
+          <span>Primary Number</span>
+          <div class="df-radio">
+            <label><input type="radio" name="df-Mobile">
+            Make this primary number</label>
+          </div>
+          <a href="#" class="rm-btn">Remove</a>
+        </div><!-- /.form-row -->
+      <a href="#" class="add-mobile-btn">Add another mobile</a>
+    </form>
+  </div><!-- /.dabba -->
+  <hr>
+  <div class="row">
+    <div class="col-one-half">
+      <div class="lightblue-bg wow slideInLeft">
+        lightblue
+      </div>
+    </div>
+    <div class="col-one-half">
+      <div class="lightgreen-bg wow slideInRight">
+        lightblue
+      </div>
+    </div>
+  </div><!-- eo row -->
+  <div class="row">
+    <div class="col-one-half">
+      <div class="lightgreen-bg wow bounceInLeft">
+        lightblue
+      </div>
+    </div>
+    <div class="col-one-half">
+      <div class="lightblue-bg wow bounceInRight">
+        lightblue
+      </div>
+    </div>
+  </div><!-- eo row -->
+  <div class="lightgreen-bg">
+    lightblue
+  </div>
+      <form action="/registration" method="POST">
+      <p>
+        User name (4 characters minimum, only alphanumeric characters):
+        <input data-validation="length alphanumeric" data-validation-length="min4">
+      </p>
+      <p>
+        Year (yyyy-mm-dd):
+        <input data-validation="date" data-validation-format="yyyy-mm-dd">
+      </p>
+      <p>
+        Website:
+        <input data-validation="url">
+      </p>
+      <p>
+        <input type="submit">
+      </p>
+    </form>
+
+</div>
+
+
+<style>
+  .form-row{
+    border-bottom: solid 1px #CCC;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin:0 100px 10px;
+  }
+  .form-row input{
+    padding: 10px;
+  }
+  .form-row span{color:#37AC37; }
+  .form-row span.error{color: #F00 }
+  .df-radio{display: inline-block; }
+  .rm-btn{float: right;}
+  .form-row.active .df-radio{display: none;}
+  .form-row span{display: none;}
+  .form-row.active span{display: inline-block;}
+  .form-row.active .rm-btn{display: none;}
+
+
+
+  .lightblue-bg,
+  .lightgreen-bg{
+    min-height: 400px;
+    margin-bottom: 40px;
+  }
+  .dabba{
+    margin-bottom: 40px;
+  }
+
+</style>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+
+  <script src="js/vendor/jquery.form-validator.min.js"></script>
+
+  <script src="js/vendor/wow.min.js" async defer></script>
+  <script src="js/04-animate-css-jquery.js" async defer></script>
+
+  <script>
+    jQuery(document).ready(function($) {
+      new WOW().init();
+      $.validate();
+    });
+  </script>
+
+</body>
+</html>

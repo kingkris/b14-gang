@@ -16,5 +16,4 @@ $(document).ready(function() {
     $('.form-row').removeClass('active');
     $(this).parentsUntil('form-row').addClass('active');
   });
-
 });

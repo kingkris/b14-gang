@@ -194,13 +194,18 @@ small, .font_small {font-size: 0.75em;}
   display: block;
   clear: both;
 }
-.col-one-third{
+.col-one-third,
+.col-one-half{
   padding:15px;
   border: dashed 1px red;
 }
 @media (min-width:768px){
   .col-one-third{
     width:33.33333%;
+    float: left;
+  }
+  .col-one-half{
+    width:50%;
     float: left;
   }
 }
