@@ -1,0 +1,23 @@
+@mixin box-style($radius, $bg) {
+	border-radius: $radius 0;
+	background-color: $bg;
+	border: solid 1px #CCC;
+	padding:10px;
+}
+
+
+@mixin square100{
+	width:100px;
+	height:100px;
+	background-color: #FFF;
+	border-radius:4px;
+	border: dotted 1px red;
+	text-align: center;
+	line-height:100px;
+	margin:5px;
+	float: left;
+}
+
+
+
+

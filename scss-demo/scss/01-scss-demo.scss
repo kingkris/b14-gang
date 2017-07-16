@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'mixin';
+
+body{
+	background-color: $body-bg;
+	margin:0;
+	font:{
+		family:"Open Sans", sans-serif;
+		weight:300;
+		size:16px;
+	}
+	line-height:1.4;
+}
+
+@import 'layout';
+@import 'header';
+@import 'banner';
+
+.about{
+	@include box-style(12px, #FFF );
+}
+
+@import 'services';
+
+.box{
+	@include square100;
+}
+
+.box-green{
+	@extend .box;
+	color:#FFF;
+	background:{
+		color:green;
+		image:url('../img/diagnal-lines-pattern.png');
+		repeat:repeat;
+		attachment:fixed;
+	}
+}

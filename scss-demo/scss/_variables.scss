@@ -1,0 +1,7 @@
+$primary-color: blue !default;
+$body-bg: lighten($primary-color, 30%);
+$header-bg: darken($primary-color, 10%);
+
+$header-txt-color: #FFF;
+$header-link-color: $header-txt-color;
+

@@ -1,0 +1,44 @@
+.services{
+	margin:20px -15px;
+	padding-left: 0;
+	list-style: none;
+	&:after{
+		content:"";
+		clear:both;
+		display: block;
+	}
+
+	> li{
+		padding:15px;
+		@media (min-width:768px){
+			float: left;
+			width:33.3333%;
+		}
+
+		.service{
+			border-radius:10px 0;
+			border: solid 1px #CCC;
+			padding:10px;
+			color:#FFF;
+		}
+
+		.service1{
+			@extend .service;
+			background:{
+				color:#B910EA;
+				image:url('../img/diagnal-lines-pattern.png');
+				repeat:repeat;
+				attachment:fixed;
+			}
+		}
+		.service2{
+			@extend .service;
+			background-color: #1067EA
+		}
+		.service3{
+			@extend .service;
+			background-color: #5EA601
+		}
+	}
+}
+

@@ -1,0 +1,160 @@
+body {
+  background-color: #9999ff;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px red;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.site-header {
+  background-color: red;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+}
+.site-header h1 {
+  font-size: 40px;
+  font-weight: normal;
+  float: left;
+}
+.site-header h1 a {
+  color: #FFF;
+  position: relative;
+  transition: all 250ms ease;
+  text-decoration: none;
+}
+.site-header h1 a:after {
+  transition: all 250ms ease;
+  content: "";
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+}
+.site-header h1 a:hover:after {
+  width: 100%;
+  height: 4px;
+}
+.site-header nav {
+  float: right;
+}
+.site-header nav a {
+  border-radius: 6px 0;
+  background-color: red;
+  border: solid 1px #CCC;
+  padding: 10px;
+  color: #FFF;
+}
+
+.banner {
+  clear: both;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+.about {
+  border-radius: 12px 0;
+  background-color: #FFF;
+  border: solid 1px #CCC;
+  padding: 10px;
+}
+
+.services {
+  margin: 20px -15px;
+  padding-left: 0;
+  list-style: none;
+}
+.services:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.services > li {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .services > li {
+    float: left;
+    width: 33.3333%;
+  }
+}
+.services > li .service, .services > li .service1, .services > li .service2, .services > li .service3 {
+  border-radius: 10px 0;
+  border: solid 1px #CCC;
+  padding: 10px;
+  color: #FFF;
+}
+.services > li .service1 {
+  background-color: #B910EA;
+  background-image: url("../img/diagnal-lines-pattern.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.services > li .service2 {
+  background-color: #1067EA;
+}
+.services > li .service3 {
+  background-color: #5EA601;
+}
+
+.box, .box-green {
+  width: 100px;
+  height: 100px;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: dotted 1px red;
+  text-align: center;
+  line-height: 100px;
+  margin: 5px;
+  float: left;
+}
+
+.box-green {
+  color: #FFF;
+  background-color: green;
+  background-image: url("../img/diagnal-lines-pattern.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/*# sourceMappingURL=01-scss-demo.css.map */

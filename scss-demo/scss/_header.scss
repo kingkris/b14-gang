@@ -1,0 +1,44 @@
+$header-bg: red;
+.site-header{
+	background-color: $header-bg;
+	color:$header-txt-color;
+	text-align: center;
+	padding:10px;
+	
+  h1{
+		font-size: 40px;
+		font-weight:normal;
+		float: left;
+		a{
+			color: $header-link-color;
+			position:relative;
+			transition: all 250ms ease;
+			text-decoration: none;
+			&:after{
+				transition: all 250ms ease;
+				content:"";
+				width:0%;
+				height:4px;
+				position: absolute;
+				bottom:0;
+				left:0;
+				right:0;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: $header-link-color;
+			}
+			&:hover:after{
+				width:100%;
+				height:4px;
+			}
+		}
+	}
+	nav{
+		float:right;
+
+		a{
+			@include box-style(6px, $header-bg );
+			color:#FFF;
+		}
+	}
+}
